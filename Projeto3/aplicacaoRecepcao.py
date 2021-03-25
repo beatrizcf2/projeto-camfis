@@ -89,60 +89,81 @@ def main():
         
         
         se der erro --> reporto ao client
-        se n der --> concateno o payload e prossigo pro prox pacote
+            erro quando:
+                - número do pacote atual nao é 1 a mais que o anterior
+                - tam do payload do head for diferente do recebido
+                -o EOP nao está no local correto (nao vieram todos os bytes)
+            o server deve enviar uma mensagem para o cliente solicitando o reenvio do pacote, seja por não ter o payload esperado, ou por não ser o pacote correto.
+                
+        se n der erro --> concateno o payload, envio msg dizendo q ta td ok pro client para que possa prosseguir para o proximo pacote
         
         getAll so vai ser True quando eu chegar no eop do ultimo pacote
         '''
         # Recebimento dos pacotes ----------------------------------------
         getAll = False
+        numberPackage = 0
         
-        #while getAll==False:
+        while getAll==False:
         
-        #Iniciando o recebimento do HEAD............................
-        head, nHead = com2.getData(10)
-        print('head: ', head)
-        
-        id = head[0:2]
-        nPackages = head[2:4]
-        nPayload = head[4:6]
-        
-        idInt = int.from_bytes(id, byteorder='big')
-        packagesLen = int.from_bytes(nPackages, byteorder='big')
-        payloadLen = int.from_bytes(nPayload, byteorder='big')
-        
-        print("--------------------------------------")
-        print("Dados do head recebidos!")
-        print(f'Id do pacote: {idInt}')
-        print(f'Numero total de pacotes: {packagesLen}')
-        print(f'Tamanho do payload: {payloadLen} bytes \n')
-    
-    
-        #Iniciando recebimento do PAYLOAD...........................
-        payload, nPayload = com2.getData(payloadLen)
-        
-        print("--------------------------------------")
-        print("Dados do payload recebidos!")
-        print(f'Recebeu: {nPayload} bytes do payload \n')
+            #Iniciando o recebimento do HEAD............................
+            head, nHead = com2.getData(10)
+            print('head: ', head)
+            
+            id = head[0:2]
+            nPackages = head[2:4]
+            nPayload = head[4:6]
+            
+            idInt = int.from_bytes(id, byteorder='big')
+            packagesLen = int.from_bytes(nPackages, byteorder='big')
+            payloadLen = int.from_bytes(nPayload, byteorder='big')
+            
+            print("--------------------------------------")
+            print("Dados do head recebidos!")
+            print(f'Id do pacote: {idInt}')
+            print(f'Numero total de pacotes: {packagesLen}')
+            print(f'Tamanho do payload: {payloadLen} bytes \n')
         
         
-        #Iniciando acesso ao EOP....................................
-        eop, nEop = com2.getData(4)
-        
-        print("--------------------------------------")
-        print("Dados do EOP recebidos!")
-        print("Verificando se eop esta correto...")
-        
-        if eop == (0).to_bytes(4, byteorder='big'):
-            print('EOP esta correto. Fim do pacote! \n')
-        
-        
-        #enviando resposta ao client com o tamanho dos dados recebidos
-        nPayload = nPayload.to_bytes(4, byteorder='big')
-        com2.sendData(nPayload)
-        
-        print("--------------------------------------")
-        print("Enviando resposta ao client... \n")
-        print(f"npayload = {nPayload}")
+            #Iniciando recebimento do PAYLOAD...........................
+            payload, payloadLenGet = com2.getData(payloadLen)
+            
+            print("--------------------------------------")
+            print("Dados do payload recebidos!")
+            print(f'Recebeu: {payloadLenGet} bytes do payload \n')
+            
+            
+            #Iniciando acesso ao EOP....................................
+            eop, nEop = com2.getData(4)
+            
+            print("--------------------------------------")
+            print("Dados do EOP recebidos!")
+            print("Verificando se eop esta correto...")
+            
+            #Verificando possíveis erros.................................
+            if payloadLen != payloadLenGet:
+                print('Tamanho do payload recebido é diferente do esperado')
+            elif idInt != numberPackage:
+                print('Id do pacote é diferente do esperado. Fora de ordem')
+            
+            elif eop != (0).to_bytes(4, byteorder='big'):
+                    print('ERRO: EOP não esta correto')
+            
+            #se nao entrar em nenhum desses erros segue a vida
+            #preciso enviar resposta q ta td certo para o servidor
+            print('Tudo certo. Fim do pacote! \n')
+            numberPackage +=1
+            
+            if idInt+1 == packagesLen:
+                getAll = True
+            
+            
+            #enviando resposta ao client com o tamanho dos dados recebidos
+            #nPayload = nPayload.to_bytes(4, byteorder='big')
+            #com2.sendData(nPayload)
+            
+            #print("--------------------------------------")
+            #print("Enviando resposta ao client... \n")
+            #print(f"npayload = {nPayload}")
             
         # FIM do recebimento dos pacotes -------------------------------
         
