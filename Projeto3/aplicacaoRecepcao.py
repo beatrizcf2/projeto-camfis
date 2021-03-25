@@ -37,7 +37,14 @@ def main():
         head, nHead = com2.getData(10)
         print('head: ', head)
         
-        payloadLen = int.from_bytes(head, byteorder='big')
+        '''
+            HEAD
+            id = head[0:2]
+            nPackages = head[2:4]
+            payload = head[4:6]
+        '''
+        
+        payloadLen = int.from_bytes(head[4:6], byteorder='big')
         
         print("--------------------------------------")
         print("Dados do head recebidos! Tipo de msg: Handshake")
@@ -56,30 +63,61 @@ def main():
         
         #enviando resposta ao servidor
         
-        msg = ("ok?").encode('utf-8') #handshake em bytes
+        msg = ("ok").encode('utf-8') #handshake em bytes
         msgLen = len(msg)
-        response = protocolo(msg, msgLen).datagrama
+        response = protocolo(msg, msgLen,0,1).datagrama
         print(f"Response: {response}")
         com2.sendData(response)
         
         print("Resposta enviada para o client!")
-        #----------------------------------------------------------------------
+        #-----------------------------------------------------------------
+       
+        '''
+            HEAD
+            id = head[0:2]        --> id pacote atual
+            nPackages = head[2:4] --> numero total de pacotes
+            npayload = head[4:6]  --> tam payload em bytes
+            
+        '''
         
         print('A recepção irá começar... \n')
         
+        '''
+        fazer um while aq pra receber tds os pacotes
+        enquanto nao receber todos os pacotes eu fico no loop
         
-        #Iniciando o recebimento do head
+        
+        
+        se der erro --> reporto ao client
+        se n der --> concateno o payload e prossigo pro prox pacote
+        
+        getAll so vai ser True quando eu chegar no eop do ultimo pacote
+        '''
+        # Recebimento dos pacotes ----------------------------------------
+        getAll = False
+        
+        #while getAll==False:
+        
+        #Iniciando o recebimento do HEAD............................
         head, nHead = com2.getData(10)
         print('head: ', head)
-        #transformando head em int para passar como arg do getdata - sei o tamanho do meu payload
-        payloadLen = int.from_bytes(head, byteorder='big')
+        
+        id = head[0:2]
+        nPackages = head[2:4]
+        nPayload = head[4:6]
+        
+        idInt = int.from_bytes(id, byteorder='big')
+        packagesLen = int.from_bytes(nPackages, byteorder='big')
+        payloadLen = int.from_bytes(nPayload, byteorder='big')
         
         print("--------------------------------------")
         print("Dados do head recebidos!")
+        print(f'Id do pacote: {idInt}')
+        print(f'Numero total de pacotes: {packagesLen}')
         print(f'Tamanho do payload: {payloadLen} bytes \n')
     
     
-        #acesso ao payload recebido
+        #Iniciando recebimento do PAYLOAD...........................
         payload, nPayload = com2.getData(payloadLen)
         
         print("--------------------------------------")
@@ -87,7 +125,7 @@ def main():
         print(f'Recebeu: {nPayload} bytes do payload \n')
         
         
-        #acesso ao EOP recebido
+        #Iniciando acesso ao EOP....................................
         eop, nEop = com2.getData(4)
         
         print("--------------------------------------")
@@ -104,7 +142,11 @@ def main():
         
         print("--------------------------------------")
         print("Enviando resposta ao client... \n")
+        print(f"npayload = {nPayload}")
+            
+        # FIM do recebimento dos pacotes -------------------------------
         
+        print('Todos pacotes salvos!')
         
         #Salvando a cópia da img enviada
         print('Salvando os dados recebidos como cópia da img... \n')

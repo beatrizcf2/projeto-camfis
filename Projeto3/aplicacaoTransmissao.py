@@ -13,7 +13,7 @@
 from enlace import *
 import time
 import numpy as np
-from funcoes import image_picker, calculate_baudrate
+from funcoes import image_picker, calculate_baudrate, createDatagrams
 from protocolo import *
 
 import os
@@ -49,19 +49,13 @@ def main():
         
         msg = ("ok?").encode('utf-8') #handshake em bytes
         msgLen = len(msg)
-        handshake = protocolo(msg, msgLen).datagrama
+        handshake = protocolo(msg, msgLen, 0, 1).datagrama
         
         print(f"Mensagem: {msg}")
         print(f"Handshake: {handshake}")
         
         getHandshake = False
         
-        #com1.sendData(hanshake.encode('utf-8'))
-        
-        #print("Mensagem de verificacao enviada")
-        #print("Esperando resposta do servidor...")
-        
-        #getHandshake = com1.getDataTime(msgLen)
         
         while getHandshake == False: #se passar de 5s
             print("cheguei até acá")
@@ -86,10 +80,9 @@ def main():
                     sys.exit()
                     
         
-            
-        
         print("Handshake efetuado com sucesso!")
         print("Preparando transmissão do arquivo...")
+        print("------------------------------- \n")
             
         
         
@@ -107,20 +100,28 @@ def main():
         #len dos bytes da imagem
         txLen = len(txBuffer)
         
-        datagrama = protocolo(txBuffer,txLen).datagrama
+        #datagrama = protocolo(txBuffer,txLen).datagrama
+        
+        #fazendo o teste dos datagramas----------
+        print('--------------------------------------')
+        print('Criando os Datagramas... \n')
+        datagramas = createDatagrams(txBuffer, txLen)
+        print('--------------------------------------')
         
         # marca o tempo do inicio da transmissao
         inicio = time.time()
-    
+        
+        print('Datagramas criados!')
         print('A transmissão irá começar... \n ')
         
-        # Enviando o datagrama
-        com1.sendData(datagrama)
-        print("--------------------------------------")
-        print("Enviando datagrama para o servidor...")
-        print("--------------------------------------")
-        
-        time.sleep(0.5)
+        for datagrama in datagramas:
+            # Enviando o datagrama
+            com1.sendData(datagrama.datagrama)
+            print("--------------------------------------")
+            print(f"Enviando datagrama {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
+            print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}")
+            print("--------------------------------------")
+            time.sleep(0.1)
         
        
         # A camada enlace possui uma camada inferior, TX possui um método para conhecermos o status da transmissão
@@ -134,6 +135,8 @@ def main():
         print("Resposta do servidor recebida!")
         print("Servidor recebeu {} bytes" .format(lenAsw))
         print("--------------------------------------")
+        
+        time.sleep(0.5)
         
         if lenAsw == txLen:
             print('\n Imagem enviada com sucesso ao servidor \n')

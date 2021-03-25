@@ -47,6 +47,15 @@ class enlace(object):
         return(data, len(data))
         
     #Método que recebe o tamanho dos dados e retorna os dados e o len dos dados apos um determinado tempo
-    def getDataTime(self, size, t):
-        data = self.rx.getNDataTime(size, t)
-        return(data)
+    
+    def getDataTime(self,size,t):
+        while self.rx.getBufferLen() < size:
+            if t <=0:
+                return False
+            mins, secs = divmod(t, 60) #calcula o n de min e seg
+            timer = '{:02d}:{:02d}'.format(int(mins), int(secs))
+            print(timer, end="\r") #print q sobrepoe o anterior
+            time.sleep(0.05) #conta 0.05 seg
+            t -= 0.05
+          
+        return self.rx.getBuffer(size)
