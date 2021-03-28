@@ -12,12 +12,17 @@ import time
 import numpy as np
 
 from protocolo import *
+from funcoes import *
 
 import os
 
 serialName = "/dev/cu.usbmodem14301" # Mac
 imageW = "./img/copia.png"
 
+
+
+    
+    
 
 def main():
     try:
@@ -31,45 +36,49 @@ def main():
         #Agora vamos iniciar a recepção dos dados. Se algo chegou ao RX, deve estar automaticamente guardado
         print('Comunicação com SUCESSO \n')
         
-        # RECEBENDO HANDSHAKE--------------------------------------------------
+        # RECEBENDO HANDSHAKE---------------------------------------------
         
         #Iniciando o recebimento do head
+        print("-------------------------------------------------")
+        print("Iniciando recebimento do HANDSHAKE")
+        print("-------------------------------------------------")
+        
         head, nHead = com2.getData(10)
         print('head: ', head)
+        if head[0:2]==0:
+            print("Mensagem do tipo handshake!")
         
         '''
             HEAD
-            id = head[0:2]
-            nPackages = head[2:4]
-            payload = head[4:6]
+            type = head[0:2]
+            id = head[2:4]
+            nPackages = head[4:6]
+            payload = head[6:8]
         '''
+        type = int.from_bytes(head[0:2], byteorder='big')
+        payloadLen = int.from_bytes(head[6:8], byteorder='big')
         
-        payloadLen = int.from_bytes(head[4:6], byteorder='big')
-        
-        print("--------------------------------------")
-        print("Dados do head recebidos! Tipo de msg: Handshake")
-        print(f'Tamanho do payload: {payloadLen} bytes \n')
-    
+       
+        print(f"Dados do head recebidos! Tipo de msg: {type} \n")
     
         #acesso ao payload recebido
         payload, nPayload = com2.getData(payloadLen)
         
-        print("--------------------------------------")
-        print("Dados do payload recebidos!")
-        print(f'Recebeu: {nPayload} bytes do payload \n')
+        print("Dados do payload recebidos! ")
+        print(f'Recebeu a seguinte msg: {payload.decode("utf-8")} \n')
         
         #acesso ao EOP recebido
         eop, nEop = com2.getData(4)
         
         #enviando resposta ao servidor
+        print("Enviando resposta ao cliente... \n")
         
-        msg = ("ok").encode('utf-8') #handshake em bytes
-        msgLen = len(msg)
-        response = protocolo(msg, msgLen,0,1).datagrama
-        print(f"Response: {response}")
+
+        response = acknowledge(0)
         com2.sendData(response)
         
         print("Resposta enviada para o client!")
+        print("----------------------------------------------------- \n")
         #-----------------------------------------------------------------
        
         '''
@@ -79,39 +88,27 @@ def main():
             npayload = head[4:6]  --> tam payload em bytes
             
         '''
+    
         
-        print('A recepção irá começar... \n')
+        print("-----------------------------------------------------")
+        print("Iniciando recebimento dos pacotes")
+        print("----------------------------------------------------- \n")
         
-        '''
-        fazer um while aq pra receber tds os pacotes
-        enquanto nao receber todos os pacotes eu fico no loop
-        
-        
-        
-        se der erro --> reporto ao client
-            erro quando:
-                - número do pacote atual nao é 1 a mais que o anterior
-                - tam do payload do head for diferente do recebido
-                -o EOP nao está no local correto (nao vieram todos os bytes)
-            o server deve enviar uma mensagem para o cliente solicitando o reenvio do pacote, seja por não ter o payload esperado, ou por não ser o pacote correto.
-                
-        se n der erro --> concateno o payload, envio msg dizendo q ta td ok pro client para que possa prosseguir para o proximo pacote
-        
-        getAll so vai ser True quando eu chegar no eop do ultimo pacote
-        '''
         # Recebimento dos pacotes ----------------------------------------
         getAll = False
         numberPackage = 0
+        payloadImg = bytearray()
         
         while getAll==False:
-        
+            erro = False
             #Iniciando o recebimento do HEAD............................
             head, nHead = com2.getData(10)
             print('head: ', head)
             
-            id = head[0:2]
-            nPackages = head[2:4]
-            nPayload = head[4:6]
+            type = head[0:2]
+            id = head[2:4]
+            nPackages = head[4:6]
+            nPayload = head[6:8]
             
             idInt = int.from_bytes(id, byteorder='big')
             packagesLen = int.from_bytes(nPackages, byteorder='big')
@@ -142,21 +139,54 @@ def main():
             #Verificando possíveis erros.................................
             if payloadLen != payloadLenGet:
                 print('Tamanho do payload recebido é diferente do esperado')
+                erro = True
             elif idInt != numberPackage:
                 print('Id do pacote é diferente do esperado. Fora de ordem')
-            
+                erro = True
             elif eop != (0).to_bytes(4, byteorder='big'):
-                    print('ERRO: EOP não esta correto')
+                print('ERRO: EOP não esta correto')
+                erro = True
+                
+            # Enviando resposta ao client...............................
+            '''
+                TYPE:
+                0 - handshake
+                1 - envio dados
+                2 - erro
+                3 - td certo
+                4 - mandar dnv
+                5 - sucesso na transmissao
+            '''
+            if erro:
+                print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...')
+                #enviar msg de erro
+                com2.sendData(acknowledge(2))
+            else:
+                print('Tudo certo :) Enviando ok ao client...')
+                com2.sendData(acknowledge(3))
             
-            #se nao entrar em nenhum desses erros segue a vida
-            #preciso enviar resposta q ta td certo para o servidor
-            print('Tudo certo. Fim do pacote! \n')
-            numberPackage +=1
             
+            
+            # Aguardando resposta do client.............................
+            time.sleep(5)
+            asw, nAsw = com2.getData(15) #head=10+payload=1+eop=4
+            type = asw[0:2] #type
+        
+            if type == 4:
+                print("Ta reenviando os dados")
+            elif type == 3:
+                #sucesso --> continuo prox pacote                print("Deu tudo certo. Partiu proximo pacote")
+                #se deu tudo certo segue o baile
+                print('Tudo certo. Fim do pacote! \n')
+                numberPackage +=1
+                payloadImg += payload
+            
+            
+            #se eu chegar no ultimo pacote saio do loop
             if idInt+1 == packagesLen:
                 getAll = True
             
-            
+        
             #enviando resposta ao client com o tamanho dos dados recebidos
             #nPayload = nPayload.to_bytes(4, byteorder='big')
             #com2.sendData(nPayload)
@@ -172,7 +202,7 @@ def main():
         #Salvando a cópia da img enviada
         print('Salvando os dados recebidos como cópia da img... \n')
         f = open(imageW, 'wb')
-        f.write(payload)
+        f.write(payloadImg)
             
     
         # Encerra comunicação

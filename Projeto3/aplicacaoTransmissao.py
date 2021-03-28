@@ -7,7 +7,17 @@
 
 
 #esta é a camada superior, de aplicação do seu software de comunicação serial UART.
-#para acompanhar a execução e identificar erros, construa prints ao longo do código! 
+#para acompanhar a execução e identificar erros, construa prints ao longo do código!
+
+'''
+    TYPE OF MESSAGE:
+    0 - handshake
+    1 - envio dados
+    2 - erro
+    3 - td certo
+    4 - mandar dnv
+    5 - sucesso na transmissao
+'''
 
 
 from enlace import *
@@ -49,8 +59,7 @@ def main():
         
         msg = ("ok?").encode('utf-8') #handshake em bytes
         msgLen = len(msg)
-        handshake = protocolo(msg, msgLen, 0, 1).datagrama
-        
+        handshake = protocolo(msg, msgLen, 0, 1, 0).datagrama
         print(f"Mensagem: {msg}")
         print(f"Handshake: {handshake}")
         
@@ -58,7 +67,6 @@ def main():
         
         
         while getHandshake == False: #se passar de 5s
-            print("cheguei até acá")
             com1.sendData(handshake)
         
             print("Mensagem de verificacao enviada")
@@ -66,7 +74,6 @@ def main():
             
             getHandshake = com1.getDataTime(msgLen, 5)
             
-            print("Cheguei ate o getdatatime")
             
             if getHandshake==False:
                 user = input("Servidor inativo. Tentar novamente? S/N: ")
@@ -100,7 +107,6 @@ def main():
         #len dos bytes da imagem
         txLen = len(txBuffer)
         
-        #datagrama = protocolo(txBuffer,txLen).datagrama
         
         #fazendo o teste dos datagramas----------
         print('--------------------------------------')
@@ -114,14 +120,41 @@ def main():
         print('Datagramas criados!')
         print('A transmissão irá começar... \n ')
         
+        '''
+        
+            Preciso receber resposta do server a cada datagrama enviado
+            Enviar uma resposta informando como que o server deve proceder
+        
+        '''
+        
         for datagrama in datagramas:
-            # Enviando o datagrama
-            com1.sendData(datagrama.datagrama)
+            erro = True
+            #enquanto erro nao der false eu continuo tentando enviar o pacote
+            while erro:
+                # Enviando o datagrama
+                com1.sendData(datagrama.datagrama)
+                print("--------------------------------------")
+                print(f"Enviando datagrama {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
+                print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}")
+                print("--------------------------------------")
+                time.sleep(1)
+                #recebendo os dados da resposta (asw) do servidor com o n de bytes recebidos
+                asw, nAsw = com1.getData(15) #head=10+payload=1+eop=4
+                type = asw[0:2] #type
+                if type == 2:
+                    #erro --> reenvio do pacote
+                    com1.sendData(acknowledge(4))
+                elif type == 3:
+                    erro = False
+                    #sucesso --> continuo o processo
+                    com1.sendData(acknowledge(3))
+                time.sleep(5)
+                
+            
+            print("Resposta do servidor recebida!")
+            print("Servidor recebeu {} bytes" .format(lenAsw))
             print("--------------------------------------")
-            print(f"Enviando datagrama {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
-            print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}")
-            print("--------------------------------------")
-            time.sleep(0.1)
+            
         
        
         # A camada enlace possui uma camada inferior, TX possui um método para conhecermos o status da transmissão

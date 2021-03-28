@@ -32,9 +32,30 @@ def createDatagrams(txBuffer,txLen):
             payloadLen = len(payload)
             print(f'O tamanho do Payload do último datagrama {id} é: {payloadLen}')
             
-        datagrama = protocolo(payload,payloadLen,id,lenPackages)
+        datagrama = protocolo(payload, payloadLen, id, lenPackages, 1)
         datagramas.append(datagrama)
         id+=1
         print(f'Foram criados {len(datagramas)}')
     
     return datagramas
+    
+def acknowledge(type):
+    '''
+        PROTOCOLO: protocolo(txBuffer, txLen, idPackage, lenPackages, type)
+        TYPE:
+        0 - handshake
+        1 - envio dados
+        2 - erro
+        3 - td certo
+        4 - mandar dnv
+        5 - sucesso na transmissao
+    '''
+    if type == 0:
+        txBuffer = ("ok?").encode('utf-8') #handshake em bytes
+        txLen = len(txBuffer)
+    else:
+        txBuffer = (0).to_bytes(1, byteorder='big')
+        txLen = len(txBuffer)
+    
+    datagrama = protocolo(txBuffer, txLen, 0, 1, type).datagrama
+    return datagrama
