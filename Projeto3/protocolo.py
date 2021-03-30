@@ -5,10 +5,12 @@ class protocolo(object):
         self.id = idPackage.to_bytes(2, byteorder='big') #qual o meu pacote
         self.nPackage = lenPackages.to_bytes(2, byteorder='big') #total de pacotes
         self.nPayload = txLen.to_bytes(2, byteorder='big') #tamanho do payload
-        
         self.head = self.type + self.id + self.nPackage + self.nPayload + (0).to_bytes(2, byteorder='big') #pra dar 10
+        
         self.payload = txBuffer
+        
         self.eop = (0).to_bytes(4, byteorder='big')
+        
         self.datagrama = self.head + self.payload + self.eop
         
         '''

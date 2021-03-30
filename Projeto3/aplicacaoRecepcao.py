@@ -40,37 +40,31 @@ def main():
         
         #Iniciando o recebimento do head
         print("-----------------------------------------")
-        print("Iniciando recebimento do HANDSHAKE")
+        print("HANDSHAKE")
         print("------------------------------------------")
         
+        print("Recebendo handshake do client ...")
         handshake, nHandshake = com2.getData(15)
+        print("Handshake recebido!\n")
         
         type = int.from_bytes(handshake[0:2], byteorder='big')
        
-        print(f"Tipo de msg: {type} \n")
+        
         
         #enviando resposta ao servidor
-        print("Enviando resposta ao cliente... \n")
+        print("Enviando resposta ao cliente...")
 
         response = acknowledge(0)
         com2.sendData(response)
         
-        print("Resposta enviada para o client!")
-        print("-------------------------------------- \n")
+        print("Resposta enviada para o client!\n")
         #-------------------------------------------------
-       
-        '''
-            HEAD
-            id = head[0:2]        --> id pacote atual
-            nPackages = head[2:4] --> numero total de pacotes
-            npayload = head[4:6]  --> tam payload em bytes
-            
-        '''
+
     
         
-        print("-----------------------------------------------------")
-        print("Iniciando recebimento dos pacotes")
-        print("----------------------------------------------------- \n")
+        print("--------------------------------------------")
+        print("Recebendo os pacotes")
+        print("-------------------------------------------- \n")
         
         # Recebimento dos pacotes ----------------------------------------
         getAll = False
@@ -94,7 +88,7 @@ def main():
             packagesLen = int.from_bytes(nPackages, byteorder='big')
             payloadLen = int.from_bytes(nPayload, byteorder='big')
             
-            print("--------------------------------------")
+            
             print("Dados do head recebidos!")
             print(f'Id do pacote: {idInt}')
             print(f'Tipo de msg: {typeInt}')
@@ -105,7 +99,7 @@ def main():
             #Iniciando recebimento do PAYLOAD...........................
             payload, payloadLenGet = com2.getData(payloadLen)
             
-            print("--------------------------------------")
+           
             print("Dados do payload recebidos!")
             print(f'Recebeu: {payloadLenGet} bytes do payload \n')
             
@@ -113,11 +107,12 @@ def main():
             #Iniciando acesso ao EOP....................................
             eop, nEop = com2.getData(4)
             
-            print("--------------------------------------")
-            print("Dados do EOP recebidos!")
-            print("Verificando se eop esta correto...")
+            print("Dados do EOP recebidos!\n")
+            
+            
             
             #Verificando possíveis erros.................................
+            print("Verificando possíveis erros ...\n")
             if payloadLen != payloadLenGet:
                 print('Tamanho do payload recebido é diferente do esperado')
                 erro = True
@@ -129,21 +124,12 @@ def main():
                 erro = True
                 
             # Enviando resposta ao client...............................
-            '''
-                TYPE:
-                0 - handshake
-                1 - envio dados
-                2 - erro
-                3 - td certo
-                4 - mandar dnv
-                5 - sucesso na transmissao
-            '''
             if erro:
-                print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...')
+                print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
                 #enviar msg de erro
                 com2.sendData(acknowledge(2))
             else:
-                print('Tudo certo :) Enviando ok ao client...')
+                print('Tudo certo :) Enviando ok ao client...\n')
                 com2.sendData(acknowledge(3))
             
             
@@ -156,13 +142,15 @@ def main():
         
             if type == 4:
                 print("Ta reenviando os dados")
+            elif type == 6:
+                raise Exception("Comunicaçao FALHOU")
             elif type == 3:
                 #sucesso --> continuo prox pacote                print("Deu tudo certo. Partiu proximo pacote")
                 #se deu tudo certo segue o baile
-                print('Tudo certo. Fim do pacote! \n')
+                print('Tudo certo. Fim do pacote!\n')
                 numberPackage +=1
                 payloadImg += payload
-            
+            print("..........................")
             
             #se eu chegar no ultimo pacote saio do loop
             if idInt+1 == packagesLen:
@@ -171,7 +159,10 @@ def main():
             
         # FIM do recebimento dos pacotes -------------------------------
         
-        print('Todos pacotes salvos!')
+        print('Todos pacotes salvos!\n')
+        print('Enviando informações da transmissao ao client ...\n')
+        
+        com2.sendData(acknowledge(5))
         
         #Salvando a cópia da img enviada
         print('Salvando os dados recebidos como cópia da img... \n')

@@ -20,22 +20,22 @@ def createDatagrams(txBuffer,txLen):
     lenPackages = ceil(txLen/114) #n de pacotes arredondando pra cima
     print(f"Tamanho da msg: {txLen}")
     print(f"Numero de pacotes: {lenPackages}")
+    print(f"Tamanho do payload do ultimo datagrama: {txLen-(114*(lenPackages-1))}\n")
     
     #preciso separar o txBuffer em n pacotes de tam 114
     for i in range(0, txLen, 114):
         if txLen - i >= 114: #se o tamanho da msg for maior ou igual a 114 preencho td o payload
             payload = txBuffer[0+i:114+i]
-            payloadLen = len(payload)
-            print(f'O tamanho do Payload do datagrama {id} é: {payloadLen}')
+            payloadLen = len(payload) 
+            
         else:
             payload = txBuffer[0+i:] # vai do inicio ate o final se o tam for menor que 114
             payloadLen = len(payload)
-            print(f'O tamanho do Payload do último datagrama {id} é: {payloadLen}')
             
         datagrama = protocolo(payload, payloadLen, id, lenPackages, 1)
         datagramas.append(datagrama)
         id+=1
-        print(f'Foram criados {len(datagramas)}')
+    print(f'Foram criados {len(datagramas)}\n')
     
     return datagramas
     
@@ -50,6 +50,7 @@ def acknowledge(type):
         3 - td certo
         4 - mandar dnv
         5 - sucesso na transmissao
+        6 - falha na transmissao
     '''
     txBuffer = (0).to_bytes(1, byteorder='big')
     txLen = len(txBuffer)

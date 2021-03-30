@@ -25,6 +25,7 @@ import time
 import numpy as np
 from funcoes import image_picker, calculate_baudrate, createDatagrams, acknowledge
 from protocolo import *
+import sys
 
 import os
 
@@ -50,7 +51,7 @@ def main():
         # Ativa comunicacao. Inicia os threads e a comunicação serial
         com1.enable()
         
-        print('Comunicação com SUCESSO')
+        print('\nComunicação com SUCESSO')
         
             
         #ENVIANDO HANDSHAKE-----------------------------
@@ -59,11 +60,8 @@ def main():
         print("-------------------------------------- \n")
         
         handshake = acknowledge(0)
-        print(f"Handshake: {handshake} \n")
-        print(f"len handshake: {len(handshake)}")
         
         getHandshake = False
-        
         
         while getHandshake == False: #se passar de 5s
             com1.sendData(handshake)
@@ -86,15 +84,15 @@ def main():
                     sys.exit()
                     
         
-        print("Handshake efetuado com sucesso!")
-        print("Preparando transmissão do arquivo... \n")
-        print("------------------------------- \n")
+        print("Servidor está ativo!\n")
             
         
-        
-        
+    
         #-------------------------------------------------
         #iniciando transmissao dos dados
+        print("--------------------------------------")
+        print("Preparando os dados...")
+        print("-------------------------------------- \n")
         
         imageR = image_picker()
 
@@ -108,10 +106,8 @@ def main():
         
         
         #fazendo o teste dos datagramas----------
-        print('--------------------------------------')
         print('Criando os Datagramas... \n')
         datagramas = createDatagrams(txBuffer, txLen)
-        print('-------------------------------------- \n')
         
         # marca o tempo do inicio da transmissao
         inicio = time.time()
@@ -119,43 +115,57 @@ def main():
         print('Datagramas criados! \n')
         print('A transmissão irá começar... \n ')
         
-        '''
-        
-            Preciso receber resposta do server a cada datagrama enviado
-            Enviar uma resposta informando como que o server deve proceder
-        
-        '''
+
+        print("--------------------------------------")
+        print("Transmitindo dos dados...")
+        print("-------------------------------------- \n")
+
         
         for datagrama in datagramas:
             erro = True
             #enquanto erro nao der false eu continuo tentando enviar o pacote
             while erro:
                 # Enviando o datagrama
+        
+                
+                print("..........................")
                 com1.sendData(datagrama.datagrama) #serve vai dar get head,payload e eop, e dps enviar msg
-                print("--------------------------------------")
-                print(f"Enviando datagrama {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
-                print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}")
-                print("--------------------------------------")
-                time.sleep(0.01)
+                print(f"Enviando pacote {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
+                print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}\n")
+                
                 #recebendo os dados da resposta (asw) do servidor com o n de bytes recebidos
+                print(f"Recebendo mensagem do servidor...")
                 asw, nAsw = com1.getData(15) #head=10+payload=1+eop=4
                 type = int.from_bytes(asw[0:2], byteorder='big') #type
-                print(f"type: {type}")
+                print(f"tipo: {type}")
                 if type == 2:
+                    print(f"ERRO no envio! Reenviando pacote {int.from_bytes(datagrama.id, byteorder='big')} ...\n")
                     #erro --> reenvio do pacote
-                    com1.sendData(acknowledge(4))
+                    user = input("Deseja tentar novamente? S/N ")
+                    if user=='N':
+                        com1.sendData(acknowledge(6))
+                        raise Exception("Comunicaçao FALHOU")
+                    else:
+                        print("Tentando novamente ...")
+                        com1.sendData(acknowledge(4))
                 elif type == 3:
                     erro = False
+                    print("SUCESSO no envio! Enviando próximo pacote {int.from_bytes(datagrama.id, byteorder='big')+1}...\n")
                     #sucesso --> continuo o processo
                     com1.sendData(acknowledge(3))
                 time.sleep(0.01)
-                
-            
-            print("Resposta do servidor recebida!")
-            print("--------------------------------------")
+        
+        print("Fim da transmissão!")
+        print("-------------------------------------- \n")
+        print("Aguardando resposta do servidor ...\n")
         
         #FIM DA TRANSMISSAO
-    
+        asw, nAsw = com1.getData(15) #head=10+payload=1+eop=4
+        type = int.from_bytes(asw[0:2], byteorder='big') #type
+        print(f"type: {type}")
+        if type == 5:
+            print("Transmissao finalizada com sucesso!")
+        
         
         #marca o tempo do fim da comunicacao
         fim = time.time()
