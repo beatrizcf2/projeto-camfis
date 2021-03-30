@@ -39,47 +39,25 @@ def main():
         # RECEBENDO HANDSHAKE---------------------------------------------
         
         #Iniciando o recebimento do head
-        print("-------------------------------------------------")
+        print("-----------------------------------------")
         print("Iniciando recebimento do HANDSHAKE")
-        print("-------------------------------------------------")
+        print("------------------------------------------")
         
-        head, nHead = com2.getData(10)
-        print('head: ', head)
-        if head[0:2]==0:
-            print("Mensagem do tipo handshake!")
+        handshake, nHandshake = com2.getData(15)
         
-        '''
-            HEAD
-            type = head[0:2]
-            id = head[2:4]
-            nPackages = head[4:6]
-            payload = head[6:8]
-        '''
-        type = int.from_bytes(head[0:2], byteorder='big')
-        payloadLen = int.from_bytes(head[6:8], byteorder='big')
-        
+        type = int.from_bytes(handshake[0:2], byteorder='big')
        
-        print(f"Dados do head recebidos! Tipo de msg: {type} \n")
-    
-        #acesso ao payload recebido
-        payload, nPayload = com2.getData(payloadLen)
-        
-        print("Dados do payload recebidos! ")
-        print(f'Recebeu a seguinte msg: {payload.decode("utf-8")} \n')
-        
-        #acesso ao EOP recebido
-        eop, nEop = com2.getData(4)
+        print(f"Tipo de msg: {type} \n")
         
         #enviando resposta ao servidor
         print("Enviando resposta ao cliente... \n")
-        
 
         response = acknowledge(0)
         com2.sendData(response)
         
         print("Resposta enviada para o client!")
-        print("----------------------------------------------------- \n")
-        #-----------------------------------------------------------------
+        print("-------------------------------------- \n")
+        #-------------------------------------------------
        
         '''
             HEAD
@@ -99,8 +77,9 @@ def main():
         numberPackage = 0
         payloadImg = bytearray()
         
-        while getAll==False:
+        while not getAll:
             erro = False
+            
             #Iniciando o recebimento do HEAD............................
             head, nHead = com2.getData(10)
             print('head: ', head)
@@ -111,12 +90,14 @@ def main():
             nPayload = head[6:8]
             
             idInt = int.from_bytes(id, byteorder='big')
+            typeInt = int.from_bytes(type, byteorder='big')
             packagesLen = int.from_bytes(nPackages, byteorder='big')
             payloadLen = int.from_bytes(nPayload, byteorder='big')
             
             print("--------------------------------------")
             print("Dados do head recebidos!")
             print(f'Id do pacote: {idInt}')
+            print(f'Tipo de msg: {typeInt}')
             print(f'Numero total de pacotes: {packagesLen}')
             print(f'Tamanho do payload: {payloadLen} bytes \n')
         
@@ -168,9 +149,10 @@ def main():
             
             
             # Aguardando resposta do client.............................
-            time.sleep(5)
+            time.sleep(0.01)
             asw, nAsw = com2.getData(15) #head=10+payload=1+eop=4
-            type = asw[0:2] #type
+            type = int.from_bytes(asw[0:2], byteorder='big') #type
+            print(f"type: {type}")
         
             if type == 4:
                 print("Ta reenviando os dados")
@@ -186,14 +168,6 @@ def main():
             if idInt+1 == packagesLen:
                 getAll = True
             
-        
-            #enviando resposta ao client com o tamanho dos dados recebidos
-            #nPayload = nPayload.to_bytes(4, byteorder='big')
-            #com2.sendData(nPayload)
-            
-            #print("--------------------------------------")
-            #print("Enviando resposta ao client... \n")
-            #print(f"npayload = {nPayload}")
             
         # FIM do recebimento dos pacotes -------------------------------
         

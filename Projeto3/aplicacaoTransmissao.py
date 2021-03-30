@@ -23,7 +23,7 @@
 from enlace import *
 import time
 import numpy as np
-from funcoes import image_picker, calculate_baudrate, createDatagrams
+from funcoes import image_picker, calculate_baudrate, createDatagrams, acknowledge
 from protocolo import *
 
 import os
@@ -54,14 +54,13 @@ def main():
         
             
         #ENVIANDO HANDSHAKE-----------------------------
-        
+        print("--------------------------------------")
         print("Verificando se servidor está ativo...")
+        print("-------------------------------------- \n")
         
-        msg = ("ok?").encode('utf-8') #handshake em bytes
-        msgLen = len(msg)
-        handshake = protocolo(msg, msgLen, 0, 1, 0).datagrama
-        print(f"Mensagem: {msg}")
-        print(f"Handshake: {handshake}")
+        handshake = acknowledge(0)
+        print(f"Handshake: {handshake} \n")
+        print(f"len handshake: {len(handshake)}")
         
         getHandshake = False
         
@@ -69,14 +68,14 @@ def main():
         while getHandshake == False: #se passar de 5s
             com1.sendData(handshake)
         
-            print("Mensagem de verificacao enviada")
-            print("Esperando resposta do servidor...")
+            print("Mensagem de verificacao enviada \n")
+            print("Esperando resposta do servidor... \n")
             
-            getHandshake = com1.getDataTime(msgLen, 5)
+            getHandshake = com1.getDataTime(15, 5)
             
             
             if getHandshake==False:
-                user = input("Servidor inativo. Tentar novamente? S/N: ")
+                user = input("Servidor inativo. Tentar novamente? S/N: \n")
                 if user == 'N':
                     # Encerra comunicação
                     print("-------------------------")
@@ -88,7 +87,7 @@ def main():
                     
         
         print("Handshake efetuado com sucesso!")
-        print("Preparando transmissão do arquivo...")
+        print("Preparando transmissão do arquivo... \n")
         print("------------------------------- \n")
             
         
@@ -112,12 +111,12 @@ def main():
         print('--------------------------------------')
         print('Criando os Datagramas... \n')
         datagramas = createDatagrams(txBuffer, txLen)
-        print('--------------------------------------')
+        print('-------------------------------------- \n')
         
         # marca o tempo do inicio da transmissao
         inicio = time.time()
         
-        print('Datagramas criados!')
+        print('Datagramas criados! \n')
         print('A transmissão irá começar... \n ')
         
         '''
@@ -132,15 +131,16 @@ def main():
             #enquanto erro nao der false eu continuo tentando enviar o pacote
             while erro:
                 # Enviando o datagrama
-                com1.sendData(datagrama.datagrama)
+                com1.sendData(datagrama.datagrama) #serve vai dar get head,payload e eop, e dps enviar msg
                 print("--------------------------------------")
                 print(f"Enviando datagrama {int.from_bytes(datagrama.id, byteorder='big')} para o servidor...")
                 print(f"Payload: {int.from_bytes(datagrama.nPayload, byteorder='big')}")
                 print("--------------------------------------")
-                time.sleep(1)
+                time.sleep(0.01)
                 #recebendo os dados da resposta (asw) do servidor com o n de bytes recebidos
                 asw, nAsw = com1.getData(15) #head=10+payload=1+eop=4
-                type = asw[0:2] #type
+                type = int.from_bytes(asw[0:2], byteorder='big') #type
+                print(f"type: {type}")
                 if type == 2:
                     #erro --> reenvio do pacote
                     com1.sendData(acknowledge(4))
@@ -148,40 +148,20 @@ def main():
                     erro = False
                     #sucesso --> continuo o processo
                     com1.sendData(acknowledge(3))
-                time.sleep(5)
+                time.sleep(0.01)
                 
             
             print("Resposta do servidor recebida!")
-            print("Servidor recebeu {} bytes" .format(lenAsw))
             print("--------------------------------------")
-            
         
-       
-        # A camada enlace possui uma camada inferior, TX possui um método para conhecermos o status da transmissão
-        txSize = com1.tx.getStatus()
-        print(f'Status TX: {txSize}')
-        
-        
-        #recebendo os dados da resposta (asw) do servidor com o n de bytes recebidos
-        asw, nAsw = com1.getData(4)
-        lenAsw = int.from_bytes(asw, byteorder='big')
-        print("Resposta do servidor recebida!")
-        print("Servidor recebeu {} bytes" .format(lenAsw))
-        print("--------------------------------------")
-        
-        time.sleep(0.5)
-        
-        if lenAsw == txLen:
-            print('\n Imagem enviada com sucesso ao servidor \n')
-        else:
-            print('\n ERRO no envio')
-        
+        #FIM DA TRANSMISSAO
+    
         
         #marca o tempo do fim da comunicacao
         fim = time.time()
         
         #calcula a taxa de transmissao
-        baudrate = calculate_baudrate(inicio, fim, lenAsw)
+        baudrate = calculate_baudrate(inicio, fim, txLen)
         print('Tempo de transmissao = {} segundos'.format(round(fim-inicio, 2)))
         print('BaudRate = {} bytes/segundo '.format(round(baudrate, 2)))
         

@@ -39,6 +39,7 @@ def createDatagrams(txBuffer,txLen):
     
     return datagramas
     
+    
 def acknowledge(type):
     '''
         PROTOCOLO: protocolo(txBuffer, txLen, idPackage, lenPackages, type)
@@ -50,12 +51,9 @@ def acknowledge(type):
         4 - mandar dnv
         5 - sucesso na transmissao
     '''
-    if type == 0:
-        txBuffer = ("ok?").encode('utf-8') #handshake em bytes
-        txLen = len(txBuffer)
-    else:
-        txBuffer = (0).to_bytes(1, byteorder='big')
-        txLen = len(txBuffer)
+    txBuffer = (0).to_bytes(1, byteorder='big')
+    txLen = len(txBuffer)
     
     datagrama = protocolo(txBuffer, txLen, 0, 1, type).datagrama
+    #total de bytes = 15
     return datagrama
