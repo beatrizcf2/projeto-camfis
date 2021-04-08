@@ -20,7 +20,6 @@ serialName = "/dev/cu.usbmodem14301" # Mac
 imageW = "./img/copia.png"
 
 
-
     
     
 
@@ -37,6 +36,7 @@ def main():
         print('Comunicação com SUCESSO \n')
         
         # RECEBENDO HANDSHAKE---------------------------------------------
+        teste = 0
         ocioso = True
         server = 111
         print("Recebendo handshake do client ...")
@@ -58,6 +58,7 @@ def main():
         successPckg = 0
         
         while cont<=numPckg:
+            print("-------------------------------------------------")
             timer1 = time.time()
             timer2 = time.time()
             head = com2.getDataTime(10, 1) #pegando so o head
@@ -123,11 +124,16 @@ def main():
             print("Dados do EOP recebidos!\n")
             
             #verificando erros
+            if cont == 7 and teste == 0:
+                h4 = 27 #verificar se esta fora de ordem
+                teste += 1
+                
+            
             if lenPayload != h5:
                 print('Tamanho do payload recebido é diferente do esperado')
                 erro = True
             elif cont != h4:
-                print('Id do pacote é diferente do esperado. Fora de ordem')
+                print(f'Id do pacote é diferente do esperado. Fora de ordem. Esperava {cont}, mas recebi {h4}')
                 erro = True
             elif eop != (0).to_bytes(4, byteorder='big'):
                 print('ERRO: EOP não esta correto')
@@ -136,27 +142,18 @@ def main():
             # Enviando resposta ao client...............................
             if erro:
                 print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
-                error = protocolo(6, 0, 0, 0, successPckg, successPckg, 0).datagrama
+                error = protocolo(6, 0, 0, 0, restartPckg, successPckg, 0).datagrama
                 com2.sendData(error)
             else:
                 print('Tudo certo :) Enviando ok ao client...\n')
+                restartPckg = cont+1
                 successPckg = cont
                 correct = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
-                #print(f"correct: {len(correct)}")
                 com2.sendData(correct)
                 cont+=1
                 payloadImg += payload
                 print("tudo certo")
                 
-            
-            '''
-            if not erro:
-                correct = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
-                com2.sendData(correct)
-                cont+=1
-                payloadImg += payload
-                print("tudo certo")
-            '''
                 
             
         

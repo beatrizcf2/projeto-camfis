@@ -69,11 +69,12 @@ def main():
         #cont precisa ser sempre igual ao numero de id do pacote
         
         while cont<=numPckg:
-            print(f"numero de datagramas: {len(datagramas)}\nnumPckg: {numPckg}\ncont: {cont}")
+            print("-------------------------------------------------")
+            print(f"Numero de datagramas: {len(datagramas)}\nnumPckg: {numPckg}\ncont: {cont}\n")
             datagrama = datagramas[cont-1]
             datagrama.h7 = cont-1 #ultimo pacote recebido com sucesso
             com1.sendData(datagrama.datagrama)
-            print(f"Enviando pacote {int.from_bytes(datagrama.h4, byteorder='big')} para o servidor...\nCont={cont}\nTipo:{int.from_bytes(datagrama.h0, byteorder='big')}\nPayload: {datagrama.payload}\nTamanho do datagrama: {len(datagrama.datagrama)}\nUltimo recebido com sucesso: {cont-1}")
+            print(f"Enviando pacote {int.from_bytes(datagrama.h4, byteorder='big')} para o servidor...\nCont={cont}\nTipo:{int.from_bytes(datagrama.h0, byteorder='big')}\nPayload: {datagrama.payload}\nTamanho do datagrama: {len(datagrama.datagrama)}\nUltimo recebido com sucesso: {cont-1}\n")
             
             timer1 = time.time()
             timer2 = time.time()
@@ -86,7 +87,6 @@ def main():
                 #    print("nao recebi nadica")
                 if not isinstance(head, bool) and int.from_bytes(head[0:1], byteorder='big')==4:
                     getType4 = True
-                    print("recebi msg do tipo 4")
                 else: #se nao recebeu a msg 4 ainda
                     if (time.time()-timer1)>5:
                         print("timer1>5")
@@ -96,45 +96,28 @@ def main():
                         print("timer2>20")
                         error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
                         com1.sendData(error)
-                        raise Exception("Falha ao comunicar com o servidor")
+                        raise Exception("Falha ao comunicar com o servidor\n")
                     if not head:
-                        print("nao recebi nada")
+                        print("nao recebi nada\n")
                     elif not isinstance(head, bool):
-                        print("recebi uma msg q n era do tipo 4\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
+                        print(f"recebi uma msg q n era do tipo 4\nTipo:{int.from_bytes(head[0:1], byteorder='big')}\n")
                         eop, nEop = com1.getData(4)
-                        print("peguei eop residual")
                         if int.from_bytes(head[0:1], byteorder='big') == 6:
-                            print("mensagem do tipo 6 recebida")
-                            cont = int.from_bytes(head[6:7], byteorder='big')
+                            cont = int.from_bytes(head[6:7], byteorder='big') #pega o pacote que devo reiniciar
                             datagrama = datagramas[cont-1]
-                            datagrama.h7 = cont - 1 #last sent successfully
+                            datagrama.h7 = cont #last sent successfully
                             com1.sendData(datagrama.datagrama)
+                            print(f"Pacote que deu erro reenviado ao servidor!/nPacote de recomeço: {cont}")
                             timer1 = time.time()
                             timer2 = time.time()
                     head = com1.getDataTime(10, 1)
             
         
-            print(f"msg do tipo 4 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}")
+            print(f"msg do tipo 4 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}\n")
             eop, nEop = com1.getData(4)
             cont+=1
             
-                
-                        
-                        
-                        
-                        
-                    
-                    
-                
-                
-        
             
-                
-        
-                    
-                    
-        
-        print("Servidor está ativo!\n")
         
         # Encerra comunicação
         print("-------------------------")
