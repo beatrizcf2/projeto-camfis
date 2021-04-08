@@ -66,31 +66,31 @@ def main():
                     getType3 = True
                     print("recebi msg do tipo 3")
                 else: #se nao recebeu a msg 3 ainda
+                    if (time.time()-timer2)>20:
+                        print("timer2>20")
+                        error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
+                        com2.sendData(error)
+                        raise Exception("Falha ao comunicar com o servidor")
+                    elif (time.time()-timer1)>2:
+                        print("timer1>2")
+                        verify = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
+                        com2.sendData(verify)
+                        timer1 = time.time()
+                        
                     if not head:
                         print("nao recebi nada")
                     elif not isinstance(head, bool):
                         print(f"recebi msg, mas nao era do tipo 3\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
                         eop, nEop = com1.getData(4)
                         print("peguei eop residual")
-                        if (time.time()-timer2)>20:
-                            print("timer2>20")
-                            error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
-                            com2.sendData(error)
-                            raise Exception("Falha ao comunicar com o servidor")
-                        elif (time.time()-timer1)>2:
-                            print("timer1>2")
-                            verify = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
-                            com2.sendData(verify)
-                            timer1 = time.time()
+                        
                     response = com2.getDataTime(10, 1)
                     
             print(f"msg do tipo 3 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}")
             h5 = int.from_bytes(head[5:6], byteorder='big')
             print(f"Tamanho do payload = {h5}")
             payload, lenPayload = com2.getData(h5)
-            print("peguei payload")
             eop, nEop = com2.getData(4)
-            print("peguei eop")
             
             #verifica erros
             
