@@ -39,6 +39,7 @@ def main():
         teste = 0
         ocioso = True
         server = 111
+        client = False
         print("Recebendo handshake do client ...")
         while ocioso:
             handshake = com2.getDataTime(14, 1) #timesleep 1s
@@ -51,8 +52,13 @@ def main():
                     ocioso = False
                     numPckg = int.from_bytes(handshake[3:4], byteorder='big')
                     print("Handshake recebido!\n")
-        response = protocolo(2, numPckg, 0, 0, 0, 0, 0).datagrama
-        com2.sendData(response)
+        response = protocolo(2, numPckg, 0, 0, 0, 0, 0)
+        com2.sendData(response.datagrama)
+        #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+        type = int.from_bytes(response.h0, byteorder='big')
+        idPckg = int.from_bytes(response.h4, byteorder='big')
+        writeLog(client, 'envio', type, len(response.datagrama), idPckg, numPckg)
+        
         cont = 1
         payloadImg = bytearray()
         successPckg = 0
@@ -71,13 +77,21 @@ def main():
                 else: #se nao recebeu a msg 3 ainda
                     if (time.time()-timer2)>20:
                         print("timer2>20")
-                        timeOut = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
-                        com2.sendData(timeOut)
+                        timeOut = protocolo(5, 0, 0, 0, 0, 0, 0)
+                        com2.sendData(timeOut.datagrama)
+                        #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                        type = int.from_bytes(timeOut.h0, byteorder='big')
+                        idPckg = int.from_bytes(timeOut.h4, byteorder='big')
+                        writeLog(client, 'envio', type, len(timeOut.datagrama), idPckg, numPckg)
                         raise Exception("Falha ao comunicar com o servidor")
                     elif (time.time()-timer1)>2:
                         print("timer1>2")
-                        verify = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
-                        com2.sendData(verify)
+                        verify = protocolo(4, 0, 0, 0, 0, 0, 0)
+                        com2.sendData(verify.datagrama)
+                        #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                        type = int.from_bytes(verify.h0, byteorder='big')
+                        idPckg = int.from_bytes(verify.h4, byteorder='big')
+                        writeLog(client, 'envio', type, len(verify.datagrama), idPckg, numPckg)
                         timer1 = time.time()
                         
                     if not head:
@@ -146,14 +160,22 @@ def main():
             # Enviando resposta ao client...............................
             if erro:
                 print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
-                error = protocolo(6, 0, 0, 0, restartPckg, successPckg, 0).datagrama
-                com2.sendData(error)
+                error = protocolo(6, 0, 0, 0, restartPckg, successPckg, 0)
+                com2.sendData(error.datagrama)
+                #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                type = int.from_bytes(error.h0, byteorder='big')
+                idPckg = int.from_bytes(error.h4, byteorder='big')
+                writeLog(client, 'envio', type, len(error.datagrama), idPckg, numPckg)
             else:
                 print('Tudo certo :) Enviando ok ao client...\n')
                 restartPckg = cont+1
                 successPckg = cont
-                correct = protocolo(4, 0, 0, 0, 0, 0, 0).datagrama
-                com2.sendData(correct)
+                correct = protocolo(4, 0, 0, 0, 0, 0, 0)
+                com2.sendData(correct.datagrama)
+                #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                type = int.from_bytes(correct.h0, byteorder='big')
+                idPckg = int.from_bytes(correct.h4, byteorder='big')
+                writeLog(client, 'envio', type, len(correct.datagrama), idPckg, numPckg)
                 cont+=1
                 payloadImg += payload
                 print("tudo certo")

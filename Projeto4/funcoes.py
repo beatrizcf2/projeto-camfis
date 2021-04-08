@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 from math import *
 from protocolo import *
+import time
 
 # https://stackoverflow.com/questions/9319317/quick-and-easy-file-dialog-in-python
 def image_picker():
@@ -59,59 +60,24 @@ def createMsg(type, lenPackages):
     datagrama = protocolo(type, lenPackages, 0, 0, 0, 0, 0).datagrama
     #total de bytes = 14
     return datagrama
-'''
-def verifyError(head):
+
+
+def writeLog(client, typeAction, typeMsg, lenMsg, idPckg, numberPckg):
+    tempo = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
     
-    h0 = int.from_bytes(head[0:1], byteorder='big')
-    h1 = int.from_bytes(head[1:2], byteorder='big')
-    h2 = int.from_bytes(head[2:3], byteorder='big')
-    h3 = int.from_bytes(head[3:4], byteorder='big')
-    h4 = int.from_bytes(head[4:5], byteorder='big')
-    h5 = int.from_bytes(head[5:6], byteorder='big')
-    h6 = int.from_bytes(head[6:7], byteorder='big')
-    h7 = int.from_bytes(head[7:8], byteorder='big')
-    h8 = int.from_bytes(head[8:9], byteorder='big')
-    h9 = int.from_bytes(head[9:10], byteorder='big')
-    
-    print(f"Tipo de mensagem: {h0}")
-    print(f"Id do sensor: {h1}")
-    print(f"Id do servidor: {h2}")
-    print(f"Número total de pacotes do arquivo: {h3}")
-    print(f"Pacote atual: {h4}")
-    print(f"Tamanho do payload {h5}")
-    print(f"Pacote solicitado para recomeço: {h6}")
-    print(f"Último pacote recebido com sucesso: {h7}")
-    print(f"CRC: {h8}")
-    print(f"CRC: {h9}\n")
-    
-    payload, lenPayload = com2.getData(h5)
-    print("Dados do payload recebidos!")
-    print(f'Recebeu: {lenPayload} bytes do payload\n')
-    
-    eop, lenEop = com2.getData(4)
-    print("Dados do EOP recebidos!\n")
-    
-    #verificando erros
-    if lenPayload != h5:
-        print('Tamanho do payload recebido é diferente do esperado')
-        erro = True
-    elif cont != h4:
-        print('Id do pacote é diferente do esperado. Fora de ordem')
-        erro = True
-    elif eop != (0).to_bytes(4, byteorder='big'):
-        print('ERRO: EOP não esta correto')
-        erro = True
-        
-    # Enviando resposta ao client...............................
-    if erro:
-        print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
-        #enviar msg de erro
-        com2.sendData()
+    if client:
+        file = open("Client1.txt", "a")
     else:
-        print('Tudo certo :) Enviando ok ao client...\n')
-        com2.sendData()
+        file = open("Server1.txt", "a")
+    
+    log = tempo + '/ ' + typeAction + '/ ' + str(typeMsg) + '/ ' + str(lenMsg)
+    if typeMsg == 3:
+        log += '/ ' + str(idPckg) + '/ ' + str(numberPckg)
+    file.write(log + '\n')
+    file.close()
         
-''' 
+    
+
         
         
     

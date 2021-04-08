@@ -50,12 +50,17 @@ def main():
         
             
         #ENVIANDO HANDSHAKE---------------------------------------
-        handshake = protocolo(1, numPckg, 0, 0, 0, 0, 0).datagrama
+        handshake = protocolo(1, numPckg, 0, 0, 0, 0, 0)
         
         inicia = False
+        client = True
         
         while not inicia:
-            com1.sendData(handshake)
+            com1.sendData(handshake.datagrama)
+            #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+            type = int.from_bytes(handshake.h0, byteorder='big')
+            idPckg = int.from_bytes(handshake.h4, byteorder='big')
+            writeLog(client, 'envio', type, len(handshake.datagrama), idPckg, numPckg)
             response = com1.getDataTime(14, 5) #retorna falso se passar de 5s
             if response==False:
                 user = input("Servidor inativo. Tentar novamente? S/N: \n")
@@ -74,7 +79,12 @@ def main():
             datagrama = datagramas[cont-1]
             datagrama.h7 = cont-1 #ultimo pacote recebido com sucesso
             com1.sendData(datagrama.datagrama)
-            print(f"Enviando pacote {int.from_bytes(datagrama.h4, byteorder='big')} para o servidor...\nCont={cont}\nTipo:{int.from_bytes(datagrama.h0, byteorder='big')}\nPayload: {datagrama.payload}\nTamanho do datagrama: {len(datagrama.datagrama)}\nUltimo recebido com sucesso: {cont-1}\n")
+            #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+            type = int.from_bytes(datagrama.h0, byteorder='big')
+            idPckg = int.from_bytes(datagrama.h4, byteorder='big')
+            writeLog(client, 'envio', type, len(datagrama.datagrama), idPckg, numPckg)
+            
+            print(f"Enviando pacote {idPckg} para o servidor...\nCont={cont}\nTipo:{type}\nTamanho do datagrama: {len(datagrama.datagrama)}\nUltimo recebido com sucesso: {cont-1}\n")
             
             timer1 = time.time()
             timer2 = time.time()
@@ -91,11 +101,19 @@ def main():
                     if (time.time()-timer1)>5:
                         print("timer1>5")
                         com1.sendData(datagrama.datagrama)
+                        #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                        type = int.from_bytes(datagrama.h0, byteorder='big')
+                        idPckg = int.from_bytes(datagrama.h4, byteorder='big')
+                        writeLog(client, 'envio', type, len(datagrama.datagrama), idPckg, numPckg)
                         timer1 = time.time()
                     if (time.time()-timer2)>20:
                         print("timer2>20")
-                        error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
-                        com1.sendData(error)
+                        error = protocolo(5, 0, 0, 0, 0, 0, 0)
+                        com1.sendData(error.datagrama)
+                        #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                        type = int.from_bytes(error.h0, byteorder='big')
+                        idPckg = int.from_bytes(error.h4, byteorder='big')
+                        writeLog(client, 'envio', type, len(error.datagrama), idPckg, numPckg)
                         raise Exception("Falha ao comunicar com o servidor\n")
                     if not head:
                         print("nao recebi nada\n")
@@ -107,6 +125,10 @@ def main():
                             datagrama = datagramas[cont-1]
                             datagrama.h7 = cont #last sent successfully
                             com1.sendData(datagrama.datagrama)
+                            #typeAction, typeMsg, lenMsg, idPckg, numberPckg
+                            type = int.from_bytes(datagrama.h0, byteorder='big')
+                            idPckg = int.from_bytes(datagrama.h4, byteorder='big')
+                            writeLog(client, 'envio', type, len(datagrama.datagrama), idPckg, numPckg)
                             print(f"Pacote que deu erro reenviado ao servidor!/nPacote de recomeço: {cont}")
                             timer1 = time.time()
                             timer2 = time.time()
