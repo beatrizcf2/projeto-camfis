@@ -81,32 +81,36 @@ def main():
             getType4 = False
                 
             while not getType4: #ainda nao recebeu msg tipo 4
-                if not head:
-                    head = com1.getDataTime(10, 1)
-                    print("nao recebi nadica")
-                elif int.from_bytes(head[0:1], byteorder='big')==4:
+                #if not head:
+                #    head = com1.getDataTime(10, 1)
+                #    print("nao recebi nadica")
+                if not isinstance(head, bool) and int.from_bytes(head[0:1], byteorder='big')==4:
                     getType4 = True
                     print("recebi msg do tipo 4")
                 else: #se nao recebeu a msg 4 ainda
-                    print("recebi uma msg q n era do tipo 4\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
-                    eop, nEop = com1.getData(4)
-                    if (time.time()-timer1)>5:
-                        print("timer1>5")
-                        com1.sendData(datagrama.datagrama)
-                        timer1 = time.time()
-                    if (time.time()-timer2)>20:
-                        print("timer2>20")
-                        error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
-                        com1.sendData(error)
-                        raise Exception("Falha ao comunicar com o servidor")
-                    if int.from_bytes(head[0:1], byteorder='big') == 6:
-                        print("mensagem do tipo 6 recebida")
-                        cont = int.from_bytes(head[8:9], byteorder='big')
-                        datagrama = datagramas[cont-1]
-                        datagrama.h7 = cont - 1 #last sent successfully
-                        com1.sendData(datagrama.datagrama)
-                        timer1 = time.time()
-                        timer2 = time.time()
+                    if not head:
+                        print("nao recebi nada")
+                    elif not isinstance(head, bool):
+                        print("recebi uma msg q n era do tipo 4\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
+                        eop, nEop = com1.getData(4)
+                        print("peguei eop residual")
+                        if (time.time()-timer1)>5:
+                            print("timer1>5")
+                            com1.sendData(datagrama.datagrama)
+                            timer1 = time.time()
+                        if (time.time()-timer2)>20:
+                            print("timer2>20")
+                            error = protocolo(5, 0, 0, 0, 0, 0, 0).datagrama
+                            com1.sendData(error)
+                            raise Exception("Falha ao comunicar com o servidor")
+                        if int.from_bytes(head[0:1], byteorder='big') == 6:
+                            print("mensagem do tipo 6 recebida")
+                            cont = int.from_bytes(head[8:9], byteorder='big')
+                            datagrama = datagramas[cont-1]
+                            datagrama.h7 = cont - 1 #last sent successfully
+                            com1.sendData(datagrama.datagrama)
+                            timer1 = time.time()
+                            timer2 = time.time()
                     head = com1.getDataTime(10, 1)
             
         
