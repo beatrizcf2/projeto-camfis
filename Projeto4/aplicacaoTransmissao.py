@@ -71,9 +71,9 @@ def main():
         while cont<=numPckg:
             print(f"numero de datagramas: {len(datagramas)}\nnumPckg: {numPckg}\ncont: {cont}")
             datagrama = datagramas[cont-1]
-            datagrama.h7 = cont
+            datagrama.h7 = cont-1 #ultimo pacote recebido com sucesso
             com1.sendData(datagrama.datagrama)
-            print(f"Enviando pacote {int.from_bytes(datagrama.h4, byteorder='big')} para o servidor...\nCont={cont}\nTipo:{int.from_bytes(datagrama.h0, byteorder='big')}\nPayload: {datagrama.payload}\nTamanho do datagrama: {len(datagrama.datagrama)}")
+            print(f"Enviando pacote {int.from_bytes(datagrama.h4, byteorder='big')} para o servidor...\nCont={cont}\nTipo:{int.from_bytes(datagrama.h0, byteorder='big')}\nPayload: {datagrama.payload}\nTamanho do datagrama: {len(datagrama.datagrama)}\nUltimo recebido com sucesso: {cont-1}")
             
             timer1 = time.time()
             timer2 = time.time()
@@ -105,7 +105,7 @@ def main():
                         print("peguei eop residual")
                         if int.from_bytes(head[0:1], byteorder='big') == 6:
                             print("mensagem do tipo 6 recebida")
-                            cont = int.from_bytes(head[8:9], byteorder='big')
+                            cont = int.from_bytes(head[6:7], byteorder='big')
                             datagrama = datagramas[cont-1]
                             datagrama.h7 = cont - 1 #last sent successfully
                             com1.sendData(datagrama.datagrama)
