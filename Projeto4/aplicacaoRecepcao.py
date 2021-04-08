@@ -125,8 +125,12 @@ def main():
             
             #verificando erros
             if cont == 7 and teste == 0:
-                h4 = 27 #verificar se esta fora de ordem
+                #h4 = 27 #verificar se esta fora de ordem
+                #h5 = 100 #verificar se payload esta correto
+                #eop = (1).to_bytes(4, byteorder='big') #verificar se eop ta certo
                 teste += 1
+                
+            
                 
             
             if lenPayload != h5:
