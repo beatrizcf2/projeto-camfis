@@ -33,7 +33,7 @@ def createDatagrams(txBuffer,txLen):
             payloadLen = len(payload)
             
         datagrama = protocolo(3, lenPackages, id, payloadLen, 0, 0, payload)
-        #PROTOCOLO: protocolo(3, lenPackages, id, payloadLen, 0, 0, payload)
+        #PROTOCOLO: protocolo(type, lenPackages, idPackage, txLen, restartPackage, successPackage, txBuffer)
         datagramas.append(datagrama)
         id+=1
     print(f'Foram criados {len(datagramas)}\n')

@@ -51,7 +51,7 @@ class enlace(object):
     def getDataTime(self,size,t):
         while self.rx.getBufferLen() < size:
             if t <=0:
-                return False
+                return False #, (0).to_bytes(size), byteorder='big')
             mins, secs = divmod(t, 60) #calcula o n de min e seg
             timer = '{:02d}:{:02d}'.format(int(mins), int(secs))
             print(timer, end="\r") #print q sobrepoe o anterior

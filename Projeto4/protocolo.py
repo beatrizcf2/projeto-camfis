@@ -44,9 +44,9 @@ class protocolo(object):
             h3 [3:4] – número total de pacotes do arquivo
             h4 [4:5] – número do pacote sendo enviado
             h5 [5:6] – se tipo for handshake:id do arquivo
-            h5 [6:7] – se tipo for dados: tamanho do payload
-            h6 [8:9] – pacote solicitado para recomeço quando ha erro no envio.
-            h7 [9:10] – último pacote recebido com sucesso.
+                     – se tipo for dados: tamanho do payload
+            h6 [7:8] – pacote solicitado para recomeço quando ha erro no envio.
+            h7 [8:9] – último pacote recebido com sucesso.
             h8 – h9 – CRC
             PAYLOAD – variável entre 0 e 114 bytes. Reservado à transmissão dos arquivos.
             EOP – 4 bytes: 0xFF 0xAA 0xFF 0xAA
