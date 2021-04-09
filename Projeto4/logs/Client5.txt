@@ -22,7 +22,14 @@
 2021-04-09 13:05:31/ recebimento head/ 4/ 10
 2021-04-09 13:05:31/ envio/ 3/ 128/ 11/ 50
 2021-04-09 13:05:32/ recebimento head/ 4/ 10
+
+------------------------Momento em que os cabos são desconectados----------------------------
+O client fica aguardando a resposta do server para prosseguir o envio dos pacotes
+
 2021-04-09 13:05:32/ envio/ 3/ 128/ 12/ 50
+
+------------------------Momento em que os cabos são reconectados-----------------------------
+
 2021-04-09 13:05:37/ recebimento head/ 4/ 10
 2021-04-09 13:05:37/ envio/ 3/ 128/ 13/ 50
 2021-04-09 13:05:37/ recebimento head/ 4/ 10

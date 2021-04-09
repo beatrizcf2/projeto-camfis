@@ -1,3 +1,5 @@
+Servidor fica ativo 20 segundos após o client tentar iniciar a transmissão.
+
 2021-04-08 22:19:23/ recebimento head/ 1/ 14
 2021-04-08 22:19:23/ envio/ 2/ 14
 2021-04-08 22:19:23/ recebimento head/ 3/ 10/ 1/ 50

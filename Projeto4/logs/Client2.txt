@@ -13,9 +13,16 @@
 2021-04-08 22:15:14/ envio/ 3/ 128/ 6/ 50
 2021-04-08 22:15:14/ recebimento head/ 4/ 10
 2021-04-08 22:15:14/ envio/ 3/ 128/ 7/ 50
+
+---------------------------- Momento em que recebe mensagem de erro -----------------------
+Ao receber uma mensagem do tipo 6, o client corrige o cont e irá reenviar o pacote solicitado.
+
 2021-04-08 22:15:15/ recebimento head/ 6/ 10
 2021-04-08 22:15:15/ envio/ 3/ 128/ 7/ 50
 2021-04-08 22:15:15/ recebimento head/ 4/ 10
+
+-------------------------------------------------------------------------------------------
+
 2021-04-08 22:15:15/ envio/ 3/ 128/ 8/ 50
 2021-04-08 22:15:15/ recebimento head/ 4/ 10
 2021-04-08 22:15:15/ envio/ 3/ 128/ 9/ 50

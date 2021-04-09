@@ -47,9 +47,16 @@
 2021-04-09 13:05:32/ recebimento head/ 3/ 10/ 12/ 50
 2021-04-09 13:05:32/ recebimento payload/ 3/ 114/ 12/ 50
 2021-04-09 13:05:32/ recebimento eop/ 3/ 4/ 12/ 50
+
+------------------------Momento em que os cabos são desconectados----------------------------
+O server fica enviando uma mensagem do tipo 4 a cada 2 segundos até que client receba sua msg
+
 2021-04-09 13:05:32/ envio/ 4/ 14
 2021-04-09 13:05:35/ envio/ 4/ 14
 2021-04-09 13:05:37/ envio/ 4/ 14
+
+------------------------Momento em que os cabos são reconectados-----------------------------
+
 2021-04-09 13:05:37/ recebimento head/ 3/ 10/ 13/ 50
 2021-04-09 13:05:37/ recebimento payload/ 3/ 114/ 13/ 50
 2021-04-09 13:05:37/ recebimento eop/ 3/ 4/ 13/ 50

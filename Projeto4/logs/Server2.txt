@@ -24,10 +24,17 @@
 2021-04-08 22:15:14/ recebimento payload/ 3/ 114/ 6/ 50
 2021-04-08 22:15:14/ recebimento eop/ 3/ 4/ 6/ 50
 2021-04-08 22:15:14/ envio/ 4/ 14
+
+---------------------------- Momento em que recebe pacote fora de ordem -----------------------
+Ao receber uma mensagem fora de ordem, o server envia uma mensagem do tipo 6 ao client, que irá reenviar o pacote.
+
 2021-04-08 22:15:14/ recebimento head/ 3/ 10/ 7/ 50
 2021-04-08 22:15:15/ recebimento payload/ 3/ 114/ 7/ 50
 2021-04-08 22:15:15/ recebimento eop/ 3/ 4/ 7/ 50
 2021-04-08 22:15:15/ envio/ 6/ 14
+
+------------------------------------------------------------------------------------------------
+
 2021-04-08 22:15:15/ recebimento head/ 3/ 10/ 7/ 50
 2021-04-08 22:15:15/ recebimento payload/ 3/ 114/ 7/ 50
 2021-04-08 22:15:15/ recebimento eop/ 3/ 4/ 7/ 50

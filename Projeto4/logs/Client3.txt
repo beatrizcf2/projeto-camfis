@@ -1,3 +1,5 @@
+O client envia uma mensagem do tipo 1 para o server a cada 5 segundos. Passados 20 segundos ele recebe uma mensagem do server do tipo 2 e prossegue a transmissão.
+
 2021-04-08 22:18:47/ envio/ 1/ 14
 2021-04-08 22:18:57/ envio/ 1/ 14
 2021-04-08 22:19:05/ envio/ 1/ 14
