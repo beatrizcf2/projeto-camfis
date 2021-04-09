@@ -40,7 +40,9 @@ def main():
         ocioso = True
         server = 111
         client = False
-        print("Recebendo handshake do client ...")
+        print('------------------------------------------')
+        print('Conectando ao Client')
+        print('------------------------------------------\n')
         while ocioso:
             handshake = com2.getDataTime(14, 1) #timesleep 1s
             if not isinstance(handshake, bool):
@@ -52,11 +54,10 @@ def main():
                 pass
             elif type==1:
                 idServer = int.from_bytes(handshake[1:2], byteorder='big')
-                print(f"opa recebi algo. idserver={idServer}")
                 if idServer == server:
                     ocioso = False
                     numPckg = int.from_bytes(handshake[3:4], byteorder='big')
-                    print("Handshake recebido!\n")
+                    print("Handshake recebido!\nPronto para iniciar a transmissão\n")
         response = protocolo(2, numPckg, 0, 0, 0, 0, 0)
         com2.sendData(response.datagrama)
         #typeAction, typeMsg, lenMsg, idPckg, numberPckg
@@ -68,8 +69,11 @@ def main():
         payloadImg = bytearray()
         successPckg = 0
         
+        print('------------------------------------------')
+        print('Recebendo Pacotes')
+        print('------------------------------------------\n\n')
+        
         while cont<=numPckg:
-            print("-------------------------------------------------")
             timer1 = time.time()
             timer2 = time.time()
             head = com2.getDataTime(10, 1) #pegando so o head
@@ -82,10 +86,11 @@ def main():
             while not getType3:
                 if not isinstance(head, bool) and int.from_bytes(head[0:1], byteorder='big')==3:
                     getType3 = True
-                    print("recebi msg do tipo 3")
+                    print("................................................................")
+                    print(f"PACOTE de dados recebido!")
                 else: #se nao recebeu a msg 3 ainda
                     if (time.time()-timer2)>20:
-                        print("timer2>20")
+                        print("timer2 > 20\nTempo máximo de espera excedido\n")
                         timeOut = protocolo(5, 0, 0, 0, 0, 0, 0)
                         com2.sendData(timeOut.datagrama)
                         #typeAction, typeMsg, lenMsg, idPckg, numberPckg
@@ -94,7 +99,7 @@ def main():
                         writeLog(client, 'envio', type, len(timeOut.datagrama), idPckg, numPckg)
                         raise Exception("Falha ao comunicar com o servidor")
                     elif (time.time()-timer1)>2:
-                        print("timer1>2")
+                        print("timer1 > 2\nEnviando mensagem do tipo 4 ao client\n")
                         verify = protocolo(4, 0, 0, 0, 0, 0, 0)
                         com2.sendData(verify.datagrama)
                         #typeAction, typeMsg, lenMsg, idPckg, numberPckg
@@ -104,14 +109,13 @@ def main():
                         timer1 = time.time()
                         
                     if not head:
-                        print("nao recebi nada")
+                        print("Nada foi recebido\n")
                     elif not isinstance(head, bool):
-                        print(f"recebi msg, mas nao era do tipo 3\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
+                        print(f"Recebi um pacote, mas nao era do tipo 3\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
                         type = int.from_bytes(head[0:1], byteorder='big')
                         idPckg = int.from_bytes(head[4:5], byteorder='big')
                         eop, nEop = com1.getData(4)
                         writeLog(client, 'recebimento eop', type, lenPayload, idPckg, numPckg)
-                        print("peguei eop residual")
                         
                     head = com2.getDataTime(10, 1)
                     if not isinstance(head, bool):
@@ -119,7 +123,6 @@ def main():
                         idPckg = int.from_bytes(head[4:5], byteorder='big')
                         writeLog(client, 'recebimento head', type, len(head), idPckg, numPckg)
                     
-            print(f"msg do tipo 3 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}")
             
             #verifica erros
             erro = False
@@ -147,22 +150,19 @@ def main():
             print(f"CRC: {h9}\n")
             
             payload, lenPayload = com2.getData(h5)
-            print("Dados do payload recebidos!")
-            print(f'Recebeu: {lenPayload} bytes do payload\n')
             writeLog(client, 'recebimento payload', type, lenPayload, idPckg, numPckg)
             
             eop, lenEop = com2.getData(4)
             writeLog(client, 'recebimento eop', type, lenEop, idPckg, numPckg)
-            print("Dados do EOP recebidos!\n")
             
             #verificando erros
+            print("Verificando possíveis erros\n")
+            
             if cont == 7 and teste == 0:
                 #h4 = 27 #verificar se esta fora de ordem
                 #h5 = 100 #verificar se payload esta correto
                 #eop = (1).to_bytes(4, byteorder='big') #verificar se eop ta certo
                 teste += 1
-                
-            
                 
             
             if lenPayload != h5:
@@ -172,12 +172,12 @@ def main():
                 print(f'Id do pacote é diferente do esperado. Fora de ordem. Esperava {cont}, mas recebi {h4}')
                 erro = True
             elif eop != (0).to_bytes(4, byteorder='big'):
-                print('ERRO: EOP não esta correto')
+                print('EOP não esta correto')
                 erro = True
                 
             # Enviando resposta ao client...............................
             if erro:
-                print('Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
+                print('ERRO - Algo deu errado :( Enviando mensagem de erro ao client e aguardando reenvio do pacote...\n')
                 error = protocolo(6, 0, 0, 0, restartPckg, successPckg, 0)
                 com2.sendData(error.datagrama)
                 #typeAction, typeMsg, lenMsg, idPckg, numberPckg
@@ -185,7 +185,7 @@ def main():
                 idPckg = int.from_bytes(error.h4, byteorder='big')
                 writeLog(client, 'envio', type, len(error.datagrama), idPckg, numPckg)
             else:
-                print('Tudo certo :) Enviando ok ao client...\n')
+                print(f'Pacote {cont} recebido com SUCESSO :)\nEnviando ok ao client...\n\n')
                 restartPckg = cont+1
                 successPckg = cont
                 correct = protocolo(4, 0, 0, 0, 0, 0, 0)
@@ -196,11 +196,11 @@ def main():
                 writeLog(client, 'envio', type, len(correct.datagrama), idPckg, numPckg)
                 cont+=1
                 payloadImg += payload
-                print("tudo certo")
+                
                 
                 
             
-        
+        print("TODOS OS DADOS FORAM ENVIADOS COM SUCESSO\n")
         print('Salvando os dados recebidos como cópia da img... \n')
         f = open(imageW, 'wb')
         f.write(payloadImg)

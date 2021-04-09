@@ -1,0 +1,1424 @@
+2021-04-09 16:11:21/ recebimento head/ 0/ 14
+2021-04-09 16:12:17/ recebimento head/ 1/ 14
+2021-04-09 16:12:17/ envio/ 2/ 14
+2021-04-09 16:12:17/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:12:17/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:12:17/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:12:17/ envio/ 4/ 14
+2021-04-09 16:12:17/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:12:17/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:12:17/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:12:17/ envio/ 4/ 14
+2021-04-09 16:12:18/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:12:18/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:12:18/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:12:18/ envio/ 4/ 14
+2021-04-09 16:12:18/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:12:18/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:12:18/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:12:18/ envio/ 4/ 14
+2021-04-09 16:12:18/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:12:18/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:12:18/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:12:18/ envio/ 4/ 14
+2021-04-09 16:12:19/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:12:19/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:12:19/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:12:19/ envio/ 4/ 14
+2021-04-09 16:12:19/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:12:19/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:12:19/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:12:19/ envio/ 4/ 14
+2021-04-09 16:12:19/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:12:19/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:12:19/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:12:19/ envio/ 4/ 14
+2021-04-09 16:12:20/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:12:20/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:12:20/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:12:20/ envio/ 4/ 14
+2021-04-09 16:12:20/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:12:20/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:12:20/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:12:20/ envio/ 4/ 14
+2021-04-09 16:12:21/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:12:21/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:12:21/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:12:21/ envio/ 4/ 14
+2021-04-09 16:12:21/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:12:21/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:12:21/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:12:21/ envio/ 4/ 14
+2021-04-09 16:12:21/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:12:21/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:12:21/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:12:21/ envio/ 4/ 14
+2021-04-09 16:12:22/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:12:22/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:12:22/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:12:22/ envio/ 4/ 14
+2021-04-09 16:12:22/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:12:22/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:12:22/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:12:22/ envio/ 4/ 14
+2021-04-09 16:12:22/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:12:22/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:12:22/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:12:22/ envio/ 4/ 14
+2021-04-09 16:12:23/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:12:23/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:12:23/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:12:23/ envio/ 4/ 14
+2021-04-09 16:12:23/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:12:23/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:12:23/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:12:23/ envio/ 4/ 14
+2021-04-09 16:12:24/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:12:24/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:12:24/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:12:24/ envio/ 4/ 14
+2021-04-09 16:12:24/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:12:24/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:12:24/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:12:24/ envio/ 4/ 14
+2021-04-09 16:12:24/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:12:24/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:12:25/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:12:25/ envio/ 4/ 14
+2021-04-09 16:12:25/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:12:25/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:12:25/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:12:25/ envio/ 4/ 14
+2021-04-09 16:12:25/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:12:25/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:12:25/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:12:25/ envio/ 4/ 14
+2021-04-09 16:12:25/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:12:26/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:12:26/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:12:26/ envio/ 4/ 14
+2021-04-09 16:12:26/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:12:26/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:12:26/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:12:26/ envio/ 4/ 14
+2021-04-09 16:12:26/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:12:26/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:12:26/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:12:26/ envio/ 4/ 14
+2021-04-09 16:12:27/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:12:27/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:12:27/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:12:27/ envio/ 4/ 14
+2021-04-09 16:12:27/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:12:27/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:12:27/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:12:27/ envio/ 4/ 14
+2021-04-09 16:12:27/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:12:27/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:12:27/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:12:27/ envio/ 4/ 14
+2021-04-09 16:12:28/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:12:28/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:12:28/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:12:28/ envio/ 4/ 14
+2021-04-09 16:12:28/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:12:28/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:12:28/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:12:28/ envio/ 4/ 14
+2021-04-09 16:12:28/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:12:28/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:12:28/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:12:28/ envio/ 4/ 14
+2021-04-09 16:12:29/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:12:29/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:12:29/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:12:29/ envio/ 4/ 14
+2021-04-09 16:12:29/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:12:29/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:12:29/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:12:29/ envio/ 4/ 14
+2021-04-09 16:12:29/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:12:29/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:12:29/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:12:29/ envio/ 4/ 14
+2021-04-09 16:12:30/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:12:30/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:12:30/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:12:30/ envio/ 4/ 14
+2021-04-09 16:12:30/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:12:30/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:12:30/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:12:30/ envio/ 4/ 14
+2021-04-09 16:12:30/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:12:30/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:12:30/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:12:30/ envio/ 4/ 14
+2021-04-09 16:12:31/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:12:31/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:12:31/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:12:31/ envio/ 4/ 14
+2021-04-09 16:12:31/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:12:31/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:12:31/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:12:31/ envio/ 4/ 14
+2021-04-09 16:12:31/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:12:31/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:12:31/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:12:31/ envio/ 4/ 14
+2021-04-09 16:12:31/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:12:31/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:12:31/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:12:31/ envio/ 4/ 14
+2021-04-09 16:12:32/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:12:32/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:12:32/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:12:32/ envio/ 4/ 14
+2021-04-09 16:12:32/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:12:32/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:12:32/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:12:32/ envio/ 4/ 14
+2021-04-09 16:12:32/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:12:32/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:12:32/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:12:32/ envio/ 4/ 14
+2021-04-09 16:12:33/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:12:33/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:12:33/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:12:33/ envio/ 4/ 14
+2021-04-09 16:12:33/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:12:33/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:12:33/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:12:33/ envio/ 4/ 14
+2021-04-09 16:12:33/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:12:33/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:12:33/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:12:33/ envio/ 4/ 14
+2021-04-09 16:12:34/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:12:34/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:12:34/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:12:34/ envio/ 4/ 14
+2021-04-09 16:12:34/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:12:34/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:12:34/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:12:34/ envio/ 4/ 14
+2021-04-09 16:15:37/ recebimento head/ 1/ 14
+2021-04-09 16:15:37/ envio/ 2/ 14
+2021-04-09 16:15:38/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:15:38/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:15:38/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:15:38/ envio/ 4/ 14
+2021-04-09 16:15:38/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:15:38/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:15:38/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:15:38/ envio/ 4/ 14
+2021-04-09 16:15:38/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:15:38/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:15:38/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:15:38/ envio/ 4/ 14
+2021-04-09 16:15:39/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:15:39/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:15:39/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:15:39/ envio/ 4/ 14
+2021-04-09 16:15:39/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:15:39/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:15:39/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:15:39/ envio/ 4/ 14
+2021-04-09 16:15:39/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:15:39/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:15:39/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:15:39/ envio/ 4/ 14
+2021-04-09 16:15:40/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:15:40/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:15:40/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:15:40/ envio/ 4/ 14
+2021-04-09 16:15:40/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:15:40/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:15:40/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:15:40/ envio/ 4/ 14
+2021-04-09 16:15:40/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:15:40/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:15:40/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:15:40/ envio/ 4/ 14
+2021-04-09 16:15:41/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:15:41/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:15:41/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:15:41/ envio/ 4/ 14
+2021-04-09 16:15:41/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:15:41/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:15:41/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:15:41/ envio/ 4/ 14
+2021-04-09 16:15:41/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:15:41/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:15:41/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:15:41/ envio/ 4/ 14
+2021-04-09 16:15:42/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:15:42/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:15:42/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:15:42/ envio/ 4/ 14
+2021-04-09 16:15:42/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:15:42/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:15:42/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:15:42/ envio/ 4/ 14
+2021-04-09 16:15:42/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:15:42/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:15:42/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:15:42/ envio/ 4/ 14
+2021-04-09 16:15:45/ envio/ 4/ 14
+2021-04-09 16:15:47/ envio/ 4/ 14
+2021-04-09 16:15:48/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:15:48/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:15:48/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:15:48/ envio/ 4/ 14
+2021-04-09 16:15:48/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:15:48/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:15:48/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:15:48/ envio/ 4/ 14
+2021-04-09 16:15:48/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:15:48/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:15:48/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:15:48/ envio/ 4/ 14
+2021-04-09 16:15:49/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:15:49/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:15:49/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:15:49/ envio/ 4/ 14
+2021-04-09 16:15:49/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:15:49/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:15:49/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:15:49/ envio/ 4/ 14
+2021-04-09 16:15:49/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:15:49/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:15:49/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:15:49/ envio/ 4/ 14
+2021-04-09 16:15:49/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:15:49/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:15:49/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:15:49/ envio/ 4/ 14
+2021-04-09 16:15:50/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:15:50/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:15:50/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:15:50/ envio/ 4/ 14
+2021-04-09 16:15:50/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:15:50/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:15:50/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:15:50/ envio/ 4/ 14
+2021-04-09 16:15:50/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:15:50/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:15:50/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:15:50/ envio/ 4/ 14
+2021-04-09 16:15:50/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:15:50/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:15:51/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:15:51/ envio/ 4/ 14
+2021-04-09 16:15:51/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:15:51/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:15:51/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:15:51/ envio/ 4/ 14
+2021-04-09 16:15:51/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:15:51/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:15:51/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:15:51/ envio/ 4/ 14
+2021-04-09 16:15:51/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:15:52/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:15:52/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:15:52/ envio/ 4/ 14
+2021-04-09 16:15:52/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:15:52/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:15:52/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:15:52/ envio/ 4/ 14
+2021-04-09 16:15:52/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:15:52/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:15:52/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:15:52/ envio/ 4/ 14
+2021-04-09 16:15:53/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:15:53/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:15:53/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:15:53/ envio/ 4/ 14
+2021-04-09 16:15:53/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:15:53/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:15:53/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:15:53/ envio/ 4/ 14
+2021-04-09 16:15:53/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:15:53/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:15:53/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:15:53/ envio/ 4/ 14
+2021-04-09 16:15:54/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:15:54/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:15:54/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:15:54/ envio/ 4/ 14
+2021-04-09 16:15:54/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:15:54/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:15:54/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:15:54/ envio/ 4/ 14
+2021-04-09 16:15:54/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:15:54/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:15:54/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:15:54/ envio/ 4/ 14
+2021-04-09 16:15:55/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:15:55/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:15:55/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:15:55/ envio/ 4/ 14
+2021-04-09 16:15:55/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:15:55/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:15:55/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:15:55/ envio/ 4/ 14
+2021-04-09 16:15:55/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:15:55/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:15:55/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:15:55/ envio/ 4/ 14
+2021-04-09 16:15:56/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:15:56/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:15:56/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:15:56/ envio/ 4/ 14
+2021-04-09 16:15:56/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:15:56/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:15:56/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:15:56/ envio/ 4/ 14
+2021-04-09 16:15:57/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:15:57/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:15:57/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:15:57/ envio/ 4/ 14
+2021-04-09 16:15:57/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:15:57/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:15:57/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:15:57/ envio/ 4/ 14
+2021-04-09 16:15:57/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:15:57/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:15:57/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:15:57/ envio/ 4/ 14
+2021-04-09 16:15:58/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:15:58/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:15:58/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:15:58/ envio/ 4/ 14
+2021-04-09 16:15:58/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:15:58/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:15:58/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:15:58/ envio/ 4/ 14
+2021-04-09 16:15:58/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:15:58/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:15:58/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:15:58/ envio/ 4/ 14
+2021-04-09 16:15:59/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:15:59/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:15:59/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:15:59/ envio/ 4/ 14
+2021-04-09 16:15:59/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:15:59/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:15:59/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:15:59/ envio/ 4/ 14
+2021-04-09 16:32:52/ recebimento head/ 1/ 14
+2021-04-09 16:32:52/ envio/ 2/ 14
+2021-04-09 16:32:52/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:32:52/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:32:52/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:32:52/ envio/ 4/ 14
+2021-04-09 16:32:52/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:32:53/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:32:53/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:32:53/ envio/ 4/ 14
+2021-04-09 16:32:53/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:32:53/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:32:53/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:32:53/ envio/ 4/ 14
+2021-04-09 16:32:53/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:32:53/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:32:53/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:32:53/ envio/ 4/ 14
+2021-04-09 16:32:54/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:32:54/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:32:54/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:32:54/ envio/ 4/ 14
+2021-04-09 16:32:54/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:32:54/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:32:54/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:32:54/ envio/ 4/ 14
+2021-04-09 16:32:54/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:32:55/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:32:55/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:32:55/ envio/ 4/ 14
+2021-04-09 16:32:55/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:32:55/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:32:55/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:32:55/ envio/ 4/ 14
+2021-04-09 16:32:55/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:32:55/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:32:55/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:32:56/ envio/ 4/ 14
+2021-04-09 16:32:56/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:32:56/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:32:56/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:32:56/ envio/ 4/ 14
+2021-04-09 16:32:56/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:32:56/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:32:56/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:32:56/ envio/ 4/ 14
+2021-04-09 16:32:56/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:32:57/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:32:57/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:32:57/ envio/ 4/ 14
+2021-04-09 16:32:57/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:32:57/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:32:57/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:32:57/ envio/ 4/ 14
+2021-04-09 16:32:57/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:32:57/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:32:57/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:32:57/ envio/ 4/ 14
+2021-04-09 16:32:58/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:32:58/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:32:58/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:32:58/ envio/ 4/ 14
+2021-04-09 16:32:58/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:32:58/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:32:58/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:32:58/ envio/ 4/ 14
+2021-04-09 16:32:58/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:32:59/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:32:59/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:32:59/ envio/ 4/ 14
+2021-04-09 16:32:59/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:32:59/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:32:59/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:32:59/ envio/ 4/ 14
+2021-04-09 16:32:59/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:32:59/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:32:59/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:33:00/ envio/ 4/ 14
+2021-04-09 16:33:00/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:33:00/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:33:00/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:33:00/ envio/ 4/ 14
+2021-04-09 16:33:00/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:33:00/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:33:00/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:33:00/ envio/ 4/ 14
+2021-04-09 16:33:01/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:33:01/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:33:01/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:33:01/ envio/ 4/ 14
+2021-04-09 16:33:01/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:33:01/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:33:01/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:33:01/ envio/ 4/ 14
+2021-04-09 16:33:01/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:33:02/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:33:02/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:33:02/ envio/ 4/ 14
+2021-04-09 16:33:02/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:33:02/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:33:02/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:33:02/ envio/ 4/ 14
+2021-04-09 16:33:02/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:33:02/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:33:02/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:33:02/ envio/ 4/ 14
+2021-04-09 16:33:03/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:33:03/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:33:03/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:33:03/ envio/ 4/ 14
+2021-04-09 16:33:03/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:33:03/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:33:03/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:33:03/ envio/ 4/ 14
+2021-04-09 16:33:04/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:33:04/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:33:04/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:33:04/ envio/ 4/ 14
+2021-04-09 16:33:04/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:33:04/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:33:04/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:33:04/ envio/ 4/ 14
+2021-04-09 16:33:04/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:33:04/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:33:04/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:33:04/ envio/ 4/ 14
+2021-04-09 16:33:05/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:33:05/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:33:05/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:33:05/ envio/ 4/ 14
+2021-04-09 16:33:05/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:33:05/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:33:05/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:33:05/ envio/ 4/ 14
+2021-04-09 16:33:05/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:33:05/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:33:05/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:33:06/ envio/ 4/ 14
+2021-04-09 16:33:06/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:33:06/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:33:06/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:33:06/ envio/ 4/ 14
+2021-04-09 16:33:06/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:33:06/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:33:06/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:33:06/ envio/ 4/ 14
+2021-04-09 16:33:07/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:33:07/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:33:07/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:33:07/ envio/ 4/ 14
+2021-04-09 16:33:07/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:33:07/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:33:07/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:33:07/ envio/ 4/ 14
+2021-04-09 16:33:07/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:33:08/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:33:08/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:33:08/ envio/ 4/ 14
+2021-04-09 16:33:08/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:33:08/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:33:08/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:33:08/ envio/ 4/ 14
+2021-04-09 16:33:08/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:33:09/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:33:09/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:33:09/ envio/ 4/ 14
+2021-04-09 16:33:09/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:33:09/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:33:09/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:33:09/ envio/ 4/ 14
+2021-04-09 16:33:09/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:33:09/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:33:09/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:33:09/ envio/ 4/ 14
+2021-04-09 16:33:10/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:33:10/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:33:10/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:33:10/ envio/ 4/ 14
+2021-04-09 16:33:10/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:33:10/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:33:10/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:33:10/ envio/ 4/ 14
+2021-04-09 16:33:10/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:33:10/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:33:11/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:33:11/ envio/ 4/ 14
+2021-04-09 16:33:11/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:33:11/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:33:11/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:33:11/ envio/ 4/ 14
+2021-04-09 16:33:11/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:33:12/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:33:12/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:33:12/ envio/ 4/ 14
+2021-04-09 16:33:12/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:33:12/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:33:12/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:33:12/ envio/ 4/ 14
+2021-04-09 16:33:12/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:33:12/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:33:12/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:33:12/ envio/ 4/ 14
+2021-04-09 16:37:39/ recebimento head/ 1/ 14
+2021-04-09 16:37:39/ envio/ 2/ 14
+2021-04-09 16:37:39/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:37:39/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:37:39/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:37:39/ envio/ 4/ 14
+2021-04-09 16:37:40/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:37:40/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:37:40/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:37:40/ envio/ 4/ 14
+2021-04-09 16:37:40/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:37:40/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:37:40/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:37:40/ envio/ 4/ 14
+2021-04-09 16:37:40/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:37:41/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:37:41/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:37:41/ envio/ 4/ 14
+2021-04-09 16:37:41/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:37:41/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:37:41/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:37:41/ envio/ 4/ 14
+2021-04-09 16:37:41/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:37:42/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:37:42/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:37:42/ envio/ 4/ 14
+2021-04-09 16:37:42/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:37:42/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:37:42/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:37:42/ envio/ 4/ 14
+2021-04-09 16:37:42/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:37:42/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:37:42/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:37:42/ envio/ 4/ 14
+2021-04-09 16:37:45/ envio/ 4/ 14
+2021-04-09 16:37:48/ envio/ 4/ 14
+2021-04-09 16:37:50/ envio/ 4/ 14
+2021-04-09 16:37:51/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:37:51/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:37:51/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:37:51/ envio/ 4/ 14
+2021-04-09 16:37:51/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:37:51/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:37:51/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:37:51/ envio/ 4/ 14
+2021-04-09 16:37:51/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:37:52/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:37:52/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:37:52/ envio/ 4/ 14
+2021-04-09 16:37:52/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:37:52/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:37:52/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:37:52/ envio/ 4/ 14
+2021-04-09 16:37:52/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:37:53/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:37:53/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:37:53/ envio/ 4/ 14
+2021-04-09 16:37:53/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:37:53/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:37:53/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:37:53/ envio/ 4/ 14
+2021-04-09 16:37:53/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:37:53/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:37:53/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:37:53/ envio/ 4/ 14
+2021-04-09 16:37:53/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:37:54/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:37:54/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:37:54/ envio/ 4/ 14
+2021-04-09 16:37:54/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:37:54/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:37:54/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:37:54/ envio/ 4/ 14
+2021-04-09 16:37:54/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:37:54/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:37:54/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:37:55/ envio/ 4/ 14
+2021-04-09 16:37:55/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:37:55/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:37:55/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:37:55/ envio/ 4/ 14
+2021-04-09 16:37:55/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:37:55/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:37:55/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:37:55/ envio/ 4/ 14
+2021-04-09 16:37:55/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:37:56/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:37:56/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:37:56/ envio/ 4/ 14
+2021-04-09 16:37:56/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:37:56/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:37:56/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:37:56/ envio/ 4/ 14
+2021-04-09 16:37:56/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:37:56/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:37:56/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:37:57/ envio/ 4/ 14
+2021-04-09 16:37:57/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:37:57/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:37:57/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:37:57/ envio/ 4/ 14
+2021-04-09 16:37:57/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:37:57/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:37:57/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:37:57/ envio/ 4/ 14
+2021-04-09 16:37:58/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:37:58/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:37:58/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:37:58/ envio/ 4/ 14
+2021-04-09 16:37:58/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:37:58/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:37:58/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:37:58/ envio/ 4/ 14
+2021-04-09 16:37:58/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:37:59/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:37:59/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:37:59/ envio/ 4/ 14
+2021-04-09 16:37:59/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:37:59/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:37:59/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:37:59/ envio/ 4/ 14
+2021-04-09 16:37:59/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:37:59/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:37:59/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:38:00/ envio/ 4/ 14
+2021-04-09 16:38:00/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:38:00/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:38:00/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:38:00/ envio/ 4/ 14
+2021-04-09 16:38:00/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:38:00/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:38:00/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:38:00/ envio/ 4/ 14
+2021-04-09 16:38:01/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:38:01/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:38:01/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:38:01/ envio/ 4/ 14
+2021-04-09 16:38:01/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:38:01/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:38:01/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:38:01/ envio/ 4/ 14
+2021-04-09 16:38:02/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:38:02/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:38:02/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:38:02/ envio/ 4/ 14
+2021-04-09 16:38:02/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:38:02/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:38:02/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:38:02/ envio/ 4/ 14
+2021-04-09 16:38:02/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:38:03/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:38:03/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:38:03/ envio/ 4/ 14
+2021-04-09 16:38:03/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:38:03/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:38:03/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:38:03/ envio/ 4/ 14
+2021-04-09 16:38:03/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:38:03/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:38:03/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:38:03/ envio/ 4/ 14
+2021-04-09 16:38:04/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:38:04/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:38:04/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:38:04/ envio/ 4/ 14
+2021-04-09 16:38:04/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:38:04/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:38:04/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:38:04/ envio/ 4/ 14
+2021-04-09 16:38:05/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:38:05/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:38:05/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:38:05/ envio/ 4/ 14
+2021-04-09 16:38:05/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:38:05/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:38:05/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:38:05/ envio/ 4/ 14
+2021-04-09 16:38:05/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:38:05/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:38:05/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:38:05/ envio/ 4/ 14
+2021-04-09 16:38:06/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:38:06/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:38:06/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:38:06/ envio/ 4/ 14
+2021-04-09 16:38:06/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:38:06/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:38:06/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:38:06/ envio/ 4/ 14
+2021-04-09 16:38:06/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:38:06/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:38:06/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:38:07/ envio/ 4/ 14
+2021-04-09 16:38:07/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:38:07/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:38:07/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:38:07/ envio/ 4/ 14
+2021-04-09 16:38:07/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:38:07/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:38:07/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:38:07/ envio/ 4/ 14
+2021-04-09 16:38:07/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:38:08/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:38:08/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:38:08/ envio/ 4/ 14
+2021-04-09 16:38:59/ recebimento head/ 1/ 14
+2021-04-09 16:38:59/ envio/ 2/ 14
+2021-04-09 16:39:00/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:39:00/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:39:00/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:39:00/ envio/ 4/ 14
+2021-04-09 16:39:00/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:39:00/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:39:00/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:39:00/ envio/ 4/ 14
+2021-04-09 16:39:01/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:39:01/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:39:01/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:39:01/ envio/ 4/ 14
+2021-04-09 16:39:01/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:39:01/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:39:01/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:39:01/ envio/ 4/ 14
+2021-04-09 16:39:01/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:39:01/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:39:01/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:39:02/ envio/ 4/ 14
+2021-04-09 16:39:02/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:39:02/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:39:02/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:39:02/ envio/ 4/ 14
+2021-04-09 16:39:02/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:39:02/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:39:02/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:39:02/ envio/ 4/ 14
+2021-04-09 16:39:02/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:39:03/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:39:03/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:39:03/ envio/ 4/ 14
+2021-04-09 16:39:03/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:39:03/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:39:03/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:39:03/ envio/ 4/ 14
+2021-04-09 16:39:03/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:39:03/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:39:04/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:39:04/ envio/ 4/ 14
+2021-04-09 16:39:04/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:39:04/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:39:04/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:39:04/ envio/ 4/ 14
+2021-04-09 16:39:04/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:39:04/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:39:05/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:39:05/ envio/ 4/ 14
+2021-04-09 16:39:05/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:39:05/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:39:05/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:39:05/ envio/ 4/ 14
+2021-04-09 16:39:05/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:39:05/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:39:05/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:39:05/ envio/ 4/ 14
+2021-04-09 16:39:06/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:39:06/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:39:06/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:39:06/ envio/ 4/ 14
+2021-04-09 16:39:06/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:39:06/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:39:06/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:39:06/ envio/ 4/ 14
+2021-04-09 16:39:06/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:39:07/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:39:07/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:39:07/ envio/ 4/ 14
+2021-04-09 16:39:07/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:39:07/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:39:07/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:39:07/ envio/ 4/ 14
+2021-04-09 16:39:07/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:39:07/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:39:07/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:39:07/ envio/ 4/ 14
+2021-04-09 16:39:08/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:39:08/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:39:08/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:39:08/ envio/ 4/ 14
+2021-04-09 16:39:08/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:39:08/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:39:08/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:39:08/ envio/ 4/ 14
+2021-04-09 16:39:09/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:39:09/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:39:09/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:39:09/ envio/ 4/ 14
+2021-04-09 16:39:09/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:39:09/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:39:09/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:39:09/ envio/ 4/ 14
+2021-04-09 16:39:09/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:39:10/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:39:10/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:39:10/ envio/ 4/ 14
+2021-04-09 16:39:10/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:39:10/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:39:10/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:39:10/ envio/ 4/ 14
+2021-04-09 16:39:10/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:39:10/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:39:10/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:39:10/ envio/ 4/ 14
+2021-04-09 16:39:11/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:39:11/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:39:11/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:39:11/ envio/ 4/ 14
+2021-04-09 16:39:11/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:39:11/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:39:11/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:39:11/ envio/ 4/ 14
+2021-04-09 16:39:11/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:39:12/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:39:12/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:39:12/ envio/ 4/ 14
+2021-04-09 16:39:12/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:39:12/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:39:12/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:39:12/ envio/ 4/ 14
+2021-04-09 16:39:12/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:39:12/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:39:12/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:39:12/ envio/ 4/ 14
+2021-04-09 16:39:13/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:39:13/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:39:13/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:39:13/ envio/ 4/ 14
+2021-04-09 16:39:13/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:39:13/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:39:13/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:39:13/ envio/ 4/ 14
+2021-04-09 16:39:13/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:39:13/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:39:14/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:39:14/ envio/ 4/ 14
+2021-04-09 16:39:14/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:39:14/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:39:14/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:39:14/ envio/ 4/ 14
+2021-04-09 16:39:14/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:39:14/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:39:14/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:39:14/ envio/ 4/ 14
+2021-04-09 16:39:17/ envio/ 4/ 14
+2021-04-09 16:39:20/ envio/ 4/ 14
+2021-04-09 16:39:21/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:39:21/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:39:21/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:39:21/ envio/ 4/ 14
+2021-04-09 16:39:21/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:39:22/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:39:22/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:39:22/ envio/ 4/ 14
+2021-04-09 16:39:22/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:39:22/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:39:22/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:39:22/ envio/ 4/ 14
+2021-04-09 16:39:22/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:39:22/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:39:22/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:39:22/ envio/ 4/ 14
+2021-04-09 16:39:22/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:39:23/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:39:23/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:39:23/ envio/ 4/ 14
+2021-04-09 16:39:23/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:39:23/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:39:23/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:39:23/ envio/ 4/ 14
+2021-04-09 16:39:23/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:39:23/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:39:23/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:39:24/ envio/ 4/ 14
+2021-04-09 16:39:24/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:39:24/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:39:24/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:39:24/ envio/ 4/ 14
+2021-04-09 16:39:24/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:39:24/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:39:24/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:39:24/ envio/ 4/ 14
+2021-04-09 16:39:25/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:39:25/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:39:25/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:39:25/ envio/ 4/ 14
+2021-04-09 16:39:25/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:39:25/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:39:25/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:39:25/ envio/ 4/ 14
+2021-04-09 16:39:25/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:39:25/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:39:25/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:39:26/ envio/ 4/ 14
+2021-04-09 16:39:26/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:39:26/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:39:26/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:39:26/ envio/ 4/ 14
+2021-04-09 16:39:26/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:39:26/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:39:26/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:39:26/ envio/ 4/ 14
+2021-04-09 16:40:39/ recebimento head/ 1/ 14
+2021-04-09 16:40:39/ envio/ 2/ 14
+2021-04-09 16:40:39/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:40:39/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:40:39/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:40:39/ envio/ 4/ 14
+2021-04-09 16:40:39/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:40:40/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:40:40/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:40:40/ envio/ 4/ 14
+2021-04-09 16:40:40/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:40:40/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:40:40/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:40:40/ envio/ 4/ 14
+2021-04-09 16:40:40/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:40:40/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:40:40/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:40:40/ envio/ 4/ 14
+2021-04-09 16:40:41/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:40:41/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:40:41/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:40:41/ envio/ 4/ 14
+2021-04-09 16:40:41/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:40:41/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:40:41/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:40:41/ envio/ 4/ 14
+2021-04-09 16:40:41/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:40:41/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:40:41/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:40:41/ envio/ 4/ 14
+2021-04-09 16:40:42/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:40:42/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:40:42/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:40:42/ envio/ 4/ 14
+2021-04-09 16:40:42/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:40:42/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:40:42/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:40:42/ envio/ 4/ 14
+2021-04-09 16:40:43/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:40:43/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:40:43/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:40:43/ envio/ 4/ 14
+2021-04-09 16:40:45/ envio/ 4/ 14
+2021-04-09 16:40:48/ envio/ 4/ 14
+2021-04-09 16:40:48/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:40:48/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:40:48/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:40:48/ envio/ 4/ 14
+2021-04-09 16:40:49/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:40:49/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:40:49/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:40:49/ envio/ 4/ 14
+2021-04-09 16:40:49/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:40:49/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:40:49/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:40:49/ envio/ 4/ 14
+2021-04-09 16:40:50/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:40:50/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:40:50/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:40:50/ envio/ 4/ 14
+2021-04-09 16:40:50/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:40:50/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:40:50/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:40:50/ envio/ 4/ 14
+2021-04-09 16:40:50/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:40:50/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:40:50/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:40:50/ envio/ 4/ 14
+2021-04-09 16:40:51/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:40:51/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:40:51/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:40:51/ envio/ 4/ 14
+2021-04-09 16:40:51/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:40:51/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:40:51/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:40:51/ envio/ 4/ 14
+2021-04-09 16:40:52/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:40:52/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:40:52/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:40:52/ envio/ 4/ 14
+2021-04-09 16:40:52/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:40:52/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:40:52/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:40:52/ envio/ 4/ 14
+2021-04-09 16:40:53/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:40:53/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:40:53/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:40:53/ envio/ 4/ 14
+2021-04-09 16:40:53/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:40:53/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:40:53/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:40:53/ envio/ 4/ 14
+2021-04-09 16:40:53/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:40:54/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:40:54/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:40:54/ envio/ 4/ 14
+2021-04-09 16:40:54/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:40:54/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:40:54/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:40:54/ envio/ 4/ 14
+2021-04-09 16:40:54/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:40:54/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:40:54/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:40:54/ envio/ 4/ 14
+2021-04-09 16:40:55/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:40:55/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:40:55/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:40:55/ envio/ 4/ 14
+2021-04-09 16:40:55/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:40:55/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:40:55/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:40:55/ envio/ 4/ 14
+2021-04-09 16:40:55/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:40:56/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:40:56/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:40:56/ envio/ 4/ 14
+2021-04-09 16:40:56/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:40:56/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:40:56/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:40:56/ envio/ 4/ 14
+2021-04-09 16:40:56/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:40:56/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:40:56/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:40:56/ envio/ 4/ 14
+2021-04-09 16:40:57/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:40:57/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:40:57/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:40:57/ envio/ 4/ 14
+2021-04-09 16:40:57/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:40:57/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:40:57/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:40:57/ envio/ 4/ 14
+2021-04-09 16:40:57/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:40:57/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:40:58/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:40:58/ envio/ 4/ 14
+2021-04-09 16:40:58/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:40:58/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:40:58/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:40:58/ envio/ 4/ 14
+2021-04-09 16:40:58/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:40:58/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:40:58/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:40:58/ envio/ 4/ 14
+2021-04-09 16:40:59/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:40:59/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:40:59/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:40:59/ envio/ 4/ 14
+2021-04-09 16:40:59/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:40:59/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:40:59/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:40:59/ envio/ 4/ 14
+2021-04-09 16:40:59/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:40:59/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:40:59/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:40:59/ envio/ 4/ 14
+2021-04-09 16:41:00/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:41:00/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:41:00/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:41:00/ envio/ 4/ 14
+2021-04-09 16:41:00/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:41:00/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:41:00/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:41:00/ envio/ 4/ 14
+2021-04-09 16:41:01/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:41:01/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:41:01/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:41:01/ envio/ 4/ 14
+2021-04-09 16:41:01/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:41:01/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:41:01/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:41:01/ envio/ 4/ 14
+2021-04-09 16:41:01/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:41:01/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:41:01/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:41:01/ envio/ 4/ 14
+2021-04-09 16:41:02/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:41:02/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:41:02/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:41:02/ envio/ 4/ 14
+2021-04-09 16:41:02/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:41:02/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:41:02/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:41:02/ envio/ 4/ 14
+2021-04-09 16:41:03/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:41:03/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:41:03/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:41:03/ envio/ 4/ 14
+2021-04-09 16:41:03/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:41:03/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:41:03/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:41:03/ envio/ 4/ 14
+2021-04-09 16:41:04/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:41:04/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:41:04/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:41:04/ envio/ 4/ 14
+2021-04-09 16:41:04/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:41:04/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:41:04/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:41:04/ envio/ 4/ 14
+2021-04-09 16:41:04/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:41:04/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:41:04/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:41:05/ envio/ 4/ 14
+2021-04-09 16:43:33/ recebimento head/ 1/ 14
+2021-04-09 16:43:33/ envio/ 2/ 14
+2021-04-09 16:43:34/ recebimento head/ 3/ 10/ 1/ 50
+2021-04-09 16:43:34/ recebimento payload/ 3/ 114/ 1/ 50
+2021-04-09 16:43:34/ recebimento eop/ 3/ 4/ 1/ 50
+2021-04-09 16:43:34/ envio/ 4/ 14
+2021-04-09 16:43:34/ recebimento head/ 3/ 10/ 2/ 50
+2021-04-09 16:43:34/ recebimento payload/ 3/ 114/ 2/ 50
+2021-04-09 16:43:34/ recebimento eop/ 3/ 4/ 2/ 50
+2021-04-09 16:43:34/ envio/ 4/ 14
+2021-04-09 16:43:34/ recebimento head/ 3/ 10/ 3/ 50
+2021-04-09 16:43:34/ recebimento payload/ 3/ 114/ 3/ 50
+2021-04-09 16:43:34/ recebimento eop/ 3/ 4/ 3/ 50
+2021-04-09 16:43:34/ envio/ 4/ 14
+2021-04-09 16:43:35/ recebimento head/ 3/ 10/ 4/ 50
+2021-04-09 16:43:35/ recebimento payload/ 3/ 114/ 4/ 50
+2021-04-09 16:43:35/ recebimento eop/ 3/ 4/ 4/ 50
+2021-04-09 16:43:35/ envio/ 4/ 14
+2021-04-09 16:43:35/ recebimento head/ 3/ 10/ 5/ 50
+2021-04-09 16:43:35/ recebimento payload/ 3/ 114/ 5/ 50
+2021-04-09 16:43:35/ recebimento eop/ 3/ 4/ 5/ 50
+2021-04-09 16:43:35/ envio/ 4/ 14
+2021-04-09 16:43:35/ recebimento head/ 3/ 10/ 6/ 50
+2021-04-09 16:43:35/ recebimento payload/ 3/ 114/ 6/ 50
+2021-04-09 16:43:35/ recebimento eop/ 3/ 4/ 6/ 50
+2021-04-09 16:43:35/ envio/ 4/ 14
+2021-04-09 16:43:36/ recebimento head/ 3/ 10/ 7/ 50
+2021-04-09 16:43:36/ recebimento payload/ 3/ 114/ 7/ 50
+2021-04-09 16:43:36/ recebimento eop/ 3/ 4/ 7/ 50
+2021-04-09 16:43:36/ envio/ 4/ 14
+2021-04-09 16:43:36/ recebimento head/ 3/ 10/ 8/ 50
+2021-04-09 16:43:36/ recebimento payload/ 3/ 114/ 8/ 50
+2021-04-09 16:43:36/ recebimento eop/ 3/ 4/ 8/ 50
+2021-04-09 16:43:36/ envio/ 4/ 14
+2021-04-09 16:43:36/ recebimento head/ 3/ 10/ 9/ 50
+2021-04-09 16:43:36/ recebimento payload/ 3/ 114/ 9/ 50
+2021-04-09 16:43:36/ recebimento eop/ 3/ 4/ 9/ 50
+2021-04-09 16:43:36/ envio/ 4/ 14
+2021-04-09 16:43:37/ recebimento head/ 3/ 10/ 10/ 50
+2021-04-09 16:43:37/ recebimento payload/ 3/ 114/ 10/ 50
+2021-04-09 16:43:37/ recebimento eop/ 3/ 4/ 10/ 50
+2021-04-09 16:43:37/ envio/ 4/ 14
+2021-04-09 16:43:37/ recebimento head/ 3/ 10/ 11/ 50
+2021-04-09 16:43:37/ recebimento payload/ 3/ 114/ 11/ 50
+2021-04-09 16:43:37/ recebimento eop/ 3/ 4/ 11/ 50
+2021-04-09 16:43:37/ envio/ 4/ 14
+2021-04-09 16:43:37/ recebimento head/ 3/ 10/ 12/ 50
+2021-04-09 16:43:38/ recebimento payload/ 3/ 114/ 12/ 50
+2021-04-09 16:43:38/ recebimento eop/ 3/ 4/ 12/ 50
+2021-04-09 16:43:38/ envio/ 4/ 14
+2021-04-09 16:43:38/ recebimento head/ 3/ 10/ 13/ 50
+2021-04-09 16:43:38/ recebimento payload/ 3/ 114/ 13/ 50
+2021-04-09 16:43:38/ recebimento eop/ 3/ 4/ 13/ 50
+2021-04-09 16:43:38/ envio/ 4/ 14
+2021-04-09 16:43:38/ recebimento head/ 3/ 10/ 14/ 50
+2021-04-09 16:43:38/ recebimento payload/ 3/ 114/ 14/ 50
+2021-04-09 16:43:38/ recebimento eop/ 3/ 4/ 14/ 50
+2021-04-09 16:43:38/ envio/ 4/ 14
+2021-04-09 16:43:39/ recebimento head/ 3/ 10/ 15/ 50
+2021-04-09 16:43:39/ recebimento payload/ 3/ 114/ 15/ 50
+2021-04-09 16:43:39/ recebimento eop/ 3/ 4/ 15/ 50
+2021-04-09 16:43:39/ envio/ 4/ 14
+2021-04-09 16:43:39/ recebimento head/ 3/ 10/ 16/ 50
+2021-04-09 16:43:39/ recebimento payload/ 3/ 114/ 16/ 50
+2021-04-09 16:43:39/ recebimento eop/ 3/ 4/ 16/ 50
+2021-04-09 16:43:39/ envio/ 4/ 14
+2021-04-09 16:43:39/ recebimento head/ 3/ 10/ 17/ 50
+2021-04-09 16:43:40/ recebimento payload/ 3/ 114/ 17/ 50
+2021-04-09 16:43:40/ recebimento eop/ 3/ 4/ 17/ 50
+2021-04-09 16:43:40/ envio/ 4/ 14
+2021-04-09 16:43:40/ recebimento head/ 3/ 10/ 18/ 50
+2021-04-09 16:43:40/ recebimento payload/ 3/ 114/ 18/ 50
+2021-04-09 16:43:40/ recebimento eop/ 3/ 4/ 18/ 50
+2021-04-09 16:43:40/ envio/ 4/ 14
+2021-04-09 16:43:40/ recebimento head/ 3/ 10/ 19/ 50
+2021-04-09 16:43:40/ recebimento payload/ 3/ 114/ 19/ 50
+2021-04-09 16:43:40/ recebimento eop/ 3/ 4/ 19/ 50
+2021-04-09 16:43:40/ envio/ 4/ 14
+2021-04-09 16:43:41/ recebimento head/ 3/ 10/ 20/ 50
+2021-04-09 16:43:41/ recebimento payload/ 3/ 114/ 20/ 50
+2021-04-09 16:43:41/ recebimento eop/ 3/ 4/ 20/ 50
+2021-04-09 16:43:41/ envio/ 4/ 14
+2021-04-09 16:43:41/ recebimento head/ 3/ 10/ 21/ 50
+2021-04-09 16:43:41/ recebimento payload/ 3/ 114/ 21/ 50
+2021-04-09 16:43:41/ recebimento eop/ 3/ 4/ 21/ 50
+2021-04-09 16:43:41/ envio/ 4/ 14
+2021-04-09 16:43:42/ recebimento head/ 3/ 10/ 22/ 50
+2021-04-09 16:43:42/ recebimento payload/ 3/ 114/ 22/ 50
+2021-04-09 16:43:42/ recebimento eop/ 3/ 4/ 22/ 50
+2021-04-09 16:43:42/ envio/ 4/ 14
+2021-04-09 16:43:42/ recebimento head/ 3/ 10/ 23/ 50
+2021-04-09 16:43:42/ recebimento payload/ 3/ 114/ 23/ 50
+2021-04-09 16:43:42/ recebimento eop/ 3/ 4/ 23/ 50
+2021-04-09 16:43:42/ envio/ 4/ 14
+2021-04-09 16:43:42/ recebimento head/ 3/ 10/ 24/ 50
+2021-04-09 16:43:42/ recebimento payload/ 3/ 114/ 24/ 50
+2021-04-09 16:43:42/ recebimento eop/ 3/ 4/ 24/ 50
+2021-04-09 16:43:42/ envio/ 4/ 14
+2021-04-09 16:43:43/ recebimento head/ 3/ 10/ 25/ 50
+2021-04-09 16:43:43/ recebimento payload/ 3/ 114/ 25/ 50
+2021-04-09 16:43:43/ recebimento eop/ 3/ 4/ 25/ 50
+2021-04-09 16:43:43/ envio/ 4/ 14
+2021-04-09 16:43:43/ recebimento head/ 3/ 10/ 26/ 50
+2021-04-09 16:43:43/ recebimento payload/ 3/ 114/ 26/ 50
+2021-04-09 16:43:43/ recebimento eop/ 3/ 4/ 26/ 50
+2021-04-09 16:43:43/ envio/ 4/ 14
+2021-04-09 16:43:43/ recebimento head/ 3/ 10/ 27/ 50
+2021-04-09 16:43:43/ recebimento payload/ 3/ 114/ 27/ 50
+2021-04-09 16:43:43/ recebimento eop/ 3/ 4/ 27/ 50
+2021-04-09 16:43:44/ envio/ 4/ 14
+2021-04-09 16:43:44/ recebimento head/ 3/ 10/ 28/ 50
+2021-04-09 16:43:44/ recebimento payload/ 3/ 114/ 28/ 50
+2021-04-09 16:43:44/ recebimento eop/ 3/ 4/ 28/ 50
+2021-04-09 16:43:44/ envio/ 4/ 14
+2021-04-09 16:43:44/ recebimento head/ 3/ 10/ 29/ 50
+2021-04-09 16:43:44/ recebimento payload/ 3/ 114/ 29/ 50
+2021-04-09 16:43:44/ recebimento eop/ 3/ 4/ 29/ 50
+2021-04-09 16:43:44/ envio/ 4/ 14
+2021-04-09 16:43:44/ recebimento head/ 3/ 10/ 30/ 50
+2021-04-09 16:43:45/ recebimento payload/ 3/ 114/ 30/ 50
+2021-04-09 16:43:45/ recebimento eop/ 3/ 4/ 30/ 50
+2021-04-09 16:43:45/ envio/ 4/ 14
+2021-04-09 16:43:45/ recebimento head/ 3/ 10/ 31/ 50
+2021-04-09 16:43:45/ recebimento payload/ 3/ 114/ 31/ 50
+2021-04-09 16:43:45/ recebimento eop/ 3/ 4/ 31/ 50
+2021-04-09 16:43:45/ envio/ 4/ 14
+2021-04-09 16:43:45/ recebimento head/ 3/ 10/ 32/ 50
+2021-04-09 16:43:45/ recebimento payload/ 3/ 114/ 32/ 50
+2021-04-09 16:43:45/ recebimento eop/ 3/ 4/ 32/ 50
+2021-04-09 16:43:45/ envio/ 4/ 14
+2021-04-09 16:43:46/ recebimento head/ 3/ 10/ 33/ 50
+2021-04-09 16:43:46/ recebimento payload/ 3/ 114/ 33/ 50
+2021-04-09 16:43:46/ recebimento eop/ 3/ 4/ 33/ 50
+2021-04-09 16:43:46/ envio/ 4/ 14
+2021-04-09 16:43:46/ recebimento head/ 3/ 10/ 34/ 50
+2021-04-09 16:43:46/ recebimento payload/ 3/ 114/ 34/ 50
+2021-04-09 16:43:46/ recebimento eop/ 3/ 4/ 34/ 50
+2021-04-09 16:43:46/ envio/ 4/ 14
+2021-04-09 16:43:47/ recebimento head/ 3/ 10/ 35/ 50
+2021-04-09 16:43:47/ recebimento payload/ 3/ 114/ 35/ 50
+2021-04-09 16:43:47/ recebimento eop/ 3/ 4/ 35/ 50
+2021-04-09 16:43:47/ envio/ 4/ 14
+2021-04-09 16:43:47/ recebimento head/ 3/ 10/ 36/ 50
+2021-04-09 16:43:47/ recebimento payload/ 3/ 114/ 36/ 50
+2021-04-09 16:43:47/ recebimento eop/ 3/ 4/ 36/ 50
+2021-04-09 16:43:47/ envio/ 4/ 14
+2021-04-09 16:43:47/ recebimento head/ 3/ 10/ 37/ 50
+2021-04-09 16:43:47/ recebimento payload/ 3/ 114/ 37/ 50
+2021-04-09 16:43:48/ recebimento eop/ 3/ 4/ 37/ 50
+2021-04-09 16:43:48/ envio/ 4/ 14
+2021-04-09 16:43:48/ recebimento head/ 3/ 10/ 38/ 50
+2021-04-09 16:43:48/ recebimento payload/ 3/ 114/ 38/ 50
+2021-04-09 16:43:48/ recebimento eop/ 3/ 4/ 38/ 50
+2021-04-09 16:43:48/ envio/ 4/ 14
+2021-04-09 16:43:48/ recebimento head/ 3/ 10/ 39/ 50
+2021-04-09 16:43:48/ recebimento payload/ 3/ 114/ 39/ 50
+2021-04-09 16:43:49/ recebimento eop/ 3/ 4/ 39/ 50
+2021-04-09 16:43:49/ envio/ 4/ 14
+2021-04-09 16:43:49/ recebimento head/ 3/ 10/ 40/ 50
+2021-04-09 16:43:49/ recebimento payload/ 3/ 114/ 40/ 50
+2021-04-09 16:43:49/ recebimento eop/ 3/ 4/ 40/ 50
+2021-04-09 16:43:49/ envio/ 4/ 14
+2021-04-09 16:43:49/ recebimento head/ 3/ 10/ 41/ 50
+2021-04-09 16:43:49/ recebimento payload/ 3/ 114/ 41/ 50
+2021-04-09 16:43:49/ recebimento eop/ 3/ 4/ 41/ 50
+2021-04-09 16:43:49/ envio/ 4/ 14
+2021-04-09 16:43:50/ recebimento head/ 3/ 10/ 42/ 50
+2021-04-09 16:43:50/ recebimento payload/ 3/ 114/ 42/ 50
+2021-04-09 16:43:50/ recebimento eop/ 3/ 4/ 42/ 50
+2021-04-09 16:43:50/ envio/ 4/ 14
+2021-04-09 16:43:50/ recebimento head/ 3/ 10/ 43/ 50
+2021-04-09 16:43:50/ recebimento payload/ 3/ 114/ 43/ 50
+2021-04-09 16:43:50/ recebimento eop/ 3/ 4/ 43/ 50
+2021-04-09 16:43:50/ envio/ 4/ 14
+2021-04-09 16:43:50/ recebimento head/ 3/ 10/ 44/ 50
+2021-04-09 16:43:50/ recebimento payload/ 3/ 114/ 44/ 50
+2021-04-09 16:43:50/ recebimento eop/ 3/ 4/ 44/ 50
+2021-04-09 16:43:50/ envio/ 4/ 14
+2021-04-09 16:43:51/ recebimento head/ 3/ 10/ 45/ 50
+2021-04-09 16:43:51/ recebimento payload/ 3/ 114/ 45/ 50
+2021-04-09 16:43:51/ recebimento eop/ 3/ 4/ 45/ 50
+2021-04-09 16:43:51/ envio/ 4/ 14
+2021-04-09 16:43:51/ recebimento head/ 3/ 10/ 46/ 50
+2021-04-09 16:43:51/ recebimento payload/ 3/ 114/ 46/ 50
+2021-04-09 16:43:51/ recebimento eop/ 3/ 4/ 46/ 50
+2021-04-09 16:43:51/ envio/ 4/ 14
+2021-04-09 16:43:52/ recebimento head/ 3/ 10/ 47/ 50
+2021-04-09 16:43:52/ recebimento payload/ 3/ 114/ 47/ 50
+2021-04-09 16:43:52/ recebimento eop/ 3/ 4/ 47/ 50
+2021-04-09 16:43:52/ envio/ 4/ 14
+2021-04-09 16:43:52/ recebimento head/ 3/ 10/ 48/ 50
+2021-04-09 16:43:52/ recebimento payload/ 3/ 114/ 48/ 50
+2021-04-09 16:43:52/ recebimento eop/ 3/ 4/ 48/ 50
+2021-04-09 16:43:52/ envio/ 4/ 14
+2021-04-09 16:43:53/ recebimento head/ 3/ 10/ 49/ 50
+2021-04-09 16:43:53/ recebimento payload/ 3/ 114/ 49/ 50
+2021-04-09 16:43:53/ recebimento eop/ 3/ 4/ 49/ 50
+2021-04-09 16:43:53/ envio/ 4/ 14
+2021-04-09 16:43:53/ recebimento head/ 3/ 10/ 50/ 50
+2021-04-09 16:43:53/ recebimento payload/ 3/ 92/ 50/ 50
+2021-04-09 16:43:53/ recebimento eop/ 3/ 4/ 50/ 50
+2021-04-09 16:43:53/ envio/ 4/ 14

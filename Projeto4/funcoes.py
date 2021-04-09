@@ -19,7 +19,7 @@ def createDatagrams(txBuffer,txLen):
     datagramas = [] #vou salvar todos meus pacotes aq
     id = 1 #id do meu primeiro pacote
     lenPackages = ceil(txLen/114) #n de pacotes arredondando pra cima
-    print(f"Tamanho da msg: {txLen}")
+    print(f"Tamanho da msg: {txLen} bytes")
     print(f"Numero de pacotes: {lenPackages}")
     print(f"Tamanho do payload do ultimo datagrama: {txLen-(114*(lenPackages-1))}\n")
     
@@ -37,7 +37,6 @@ def createDatagrams(txBuffer,txLen):
         #PROTOCOLO: protocolo(type, lenPackages, idPackage, txLen, restartPackage, successPackage, txBuffer)
         datagramas.append(datagrama)
         id+=1
-    print(f'Foram criados {len(datagramas)}\n')
     
     return datagramas
     
@@ -66,9 +65,9 @@ def writeLog(client, typeAction, typeMsg, lenMsg, idPckg, numberPckg):
     tempo = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
     
     if client:
-        file = open("logs/Client4.txt", "a")
+        file = open("logs/Client.txt", "a")
     else:
-        file = open("logs/Server4.txt", "a")
+        file = open("logs/Server.txt", "a")
     
     log = tempo + '/ ' + typeAction + '/ ' + str(typeMsg) + '/ ' + str(lenMsg)
     if typeMsg == 3:
