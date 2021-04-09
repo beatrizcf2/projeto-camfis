@@ -62,11 +62,15 @@ def main():
             idPckg = int.from_bytes(handshake.h4, byteorder='big')
             writeLog(client, 'envio', type, len(handshake.datagrama), idPckg, numPckg)
             response = com1.getDataTime(14, 5) #retorna falso se passar de 5s
+            if not isinstance(response, bool):
+                type = int.from_bytes(response[0:1], byteorder='big')
+                idPckg = int.from_bytes(response[4:5], byteorder='big')
+                writeLog(client, 'recebimento', type, len(response), idPckg, numPckg)
             if response==False:
                 user = input("Servidor inativo. Tentar novamente? S/N: \n")
                 if user == 'N':
                     raise Exception("Falha ao comunicar com o servidor")
-            elif int.from_bytes(response[0:1], byteorder='big')==2:
+            elif type==2:
                 print("Resposta do server recebida")
                 cont = 1
                 inicia = True
@@ -89,12 +93,13 @@ def main():
             timer1 = time.time()
             timer2 = time.time()
             head = com1.getDataTime(10, 1)
+            if not isinstance(head, bool):
+                type = int.from_bytes(head[0:1], byteorder='big')
+                idPckg = int.from_bytes(head[4:5], byteorder='big')
+                writeLog(client, 'recebimento head', type, len(head), idPckg, numPckg)
             getType4 = False
                 
             while not getType4: #ainda nao recebeu msg tipo 4
-                #if not head:
-                #    head = com1.getDataTime(10, 1)
-                #    print("nao recebi nadica")
                 if not isinstance(head, bool) and int.from_bytes(head[0:1], byteorder='big')==4:
                     getType4 = True
                 else: #se nao recebeu a msg 4 ainda
@@ -133,6 +138,11 @@ def main():
                             timer1 = time.time()
                             timer2 = time.time()
                     head = com1.getDataTime(10, 1)
+                    if not isinstance(head, bool):
+                        type = int.from_bytes(head[0:1], byteorder='big')
+                        idPckg = int.from_bytes(head[4:5], byteorder='big')
+                        writeLog(client, 'recebimento head', type, len(head), idPckg, numPckg)
+                    
             
         
             print(f"msg do tipo 4 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}\n")

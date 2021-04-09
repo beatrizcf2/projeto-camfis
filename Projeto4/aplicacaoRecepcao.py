@@ -43,9 +43,14 @@ def main():
         print("Recebendo handshake do client ...")
         while ocioso:
             handshake = com2.getDataTime(14, 1) #timesleep 1s
+            if not isinstance(handshake, bool):
+                type = int.from_bytes(handshake[0:1], byteorder='big')
+                idPckg = int.from_bytes(handshake[4:5], byteorder='big')
+                numPckg = int.from_bytes(handshake[3:4], byteorder='big')
+                writeLog(client, 'recebimento head', type, len(handshake), idPckg, numPckg)
             if handshake==False:
                 pass
-            elif int.from_bytes(handshake[0:1], byteorder='big')==1:
+            elif type==1:
                 idServer = int.from_bytes(handshake[1:2], byteorder='big')
                 print(f"opa recebi algo. idserver={idServer}")
                 if idServer == server:
@@ -68,6 +73,10 @@ def main():
             timer1 = time.time()
             timer2 = time.time()
             head = com2.getDataTime(10, 1) #pegando so o head
+            if not isinstance(head, bool):
+                type = int.from_bytes(head[0:1], byteorder='big')
+                idPckg = int.from_bytes(head[4:5], byteorder='big')
+                writeLog(client, 'recebimento head', type, len(head), idPckg, numPckg)
             getType3 = False
                 
             while not getType3:
@@ -98,10 +107,17 @@ def main():
                         print("nao recebi nada")
                     elif not isinstance(head, bool):
                         print(f"recebi msg, mas nao era do tipo 3\nTipo:{int.from_bytes(head[0:1], byteorder='big')}")
+                        type = int.from_bytes(head[0:1], byteorder='big')
+                        idPckg = int.from_bytes(head[4:5], byteorder='big')
                         eop, nEop = com1.getData(4)
+                        writeLog(client, 'recebimento eop', type, lenPayload, idPckg, numPckg)
                         print("peguei eop residual")
                         
                     response = com2.getDataTime(10, 1)
+                    if not isinstance(response, bool):
+                        type = int.from_bytes(response[0:1], byteorder='big')
+                        idPckg = int.from_bytes(response[4:5], byteorder='big')
+                        writeLog(client, 'recebimento head', type, len(response), idPckg, numPckg)
                     
             print(f"msg do tipo 3 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}")
             
@@ -133,8 +149,10 @@ def main():
             payload, lenPayload = com2.getData(h5)
             print("Dados do payload recebidos!")
             print(f'Recebeu: {lenPayload} bytes do payload\n')
+            writeLog(client, 'recebimento payload', type, lenPayload, idPckg, numPckg)
             
             eop, lenEop = com2.getData(4)
+            writeLog(client, 'recebimento eop', type, lenEop, idPckg, numPckg)
             print("Dados do EOP recebidos!\n")
             
             #verificando erros

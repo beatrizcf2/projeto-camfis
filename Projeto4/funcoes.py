@@ -66,9 +66,9 @@ def writeLog(client, typeAction, typeMsg, lenMsg, idPckg, numberPckg):
     tempo = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
     
     if client:
-        file = open("Client1.txt", "a")
+        file = open("logs/Client5.txt", "a")
     else:
-        file = open("Server1.txt", "a")
+        file = open("logs/Server5.txt", "a")
     
     log = tempo + '/ ' + typeAction + '/ ' + str(typeMsg) + '/ ' + str(lenMsg)
     if typeMsg == 3:
