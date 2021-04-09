@@ -113,11 +113,11 @@ def main():
                         writeLog(client, 'recebimento eop', type, lenPayload, idPckg, numPckg)
                         print("peguei eop residual")
                         
-                    response = com2.getDataTime(10, 1)
-                    if not isinstance(response, bool):
-                        type = int.from_bytes(response[0:1], byteorder='big')
-                        idPckg = int.from_bytes(response[4:5], byteorder='big')
-                        writeLog(client, 'recebimento head', type, len(response), idPckg, numPckg)
+                    head = com2.getDataTime(10, 1)
+                    if not isinstance(head, bool):
+                        type = int.from_bytes(head[0:1], byteorder='big')
+                        idPckg = int.from_bytes(head[4:5], byteorder='big')
+                        writeLog(client, 'recebimento head', type, len(head), idPckg, numPckg)
                     
             print(f"msg do tipo 3 encontrada\nid={int.from_bytes(head[4:5], byteorder='big')}")
             
