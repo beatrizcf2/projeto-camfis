@@ -52,7 +52,7 @@ class TX(object):
     def getBufferLen(self):
         return(len(self.buffer))
 
-    #retorna o status da transmissao - corresponde ao translen q inicia com 0 a contagem
+    
     def getStatus(self):
         return(self.transLen)
         
